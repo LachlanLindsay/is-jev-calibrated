@@ -52,6 +52,10 @@ claim gets mis-sold in either direction.
 
 ## Quickstart (no API key, no network)
 
+Python 3.10 or newer. On a Mac, note that `/usr/bin/python3` is 3.9 — build the
+virtualenv against a newer interpreter (`python3.12 -m venv .venv`) rather than
+the system one.
+
 ```bash
 pip install -r requirements.txt
 python -m jevcal audit examples/tasks/demo-choice.json --provider simulated

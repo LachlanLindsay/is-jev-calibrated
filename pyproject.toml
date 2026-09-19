@@ -26,4 +26,8 @@ include = ["jevcal*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-filterwarnings = ["error::DeprecationWarning"]
+# Fail on deprecations *we* cause, but never on a dependency's. Erroring on
+# every DeprecationWarning means any upstream release can break this suite
+# without a line of our code changing -- which is exactly what an older
+# matplotlib emitting a pyparsing deprecation at import time did.
+filterwarnings = ["error::DeprecationWarning:jevcal"]
