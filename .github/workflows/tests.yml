@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      # The offline audit must stay runnable with no key and no network: it is
+      # how anyone reproduces the pipeline before spending money on a real run.
+      - run: python -m jevcal audit examples/tasks/demo-choice.json --provider simulated --report-dir /tmp/rep

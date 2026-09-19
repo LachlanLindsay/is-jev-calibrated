@@ -1,0 +1,11 @@
+{
+  "name": "demo-noul",
+  "kind": "noul",
+  "question": "Is this review positive?",
+  "labels": [
+    "true",
+    "false"
+  ],
+  "source": "jevcal.datasets.synthetic_task (generated, not a benchmark)",
+  "data": "demo-noul.jsonl"
+}

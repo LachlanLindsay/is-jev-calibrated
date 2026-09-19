@@ -1,0 +1,2000 @@
+{"id": "syn-000000", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000001", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000002", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000003", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000004", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000005", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000006", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000007", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000008", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000009", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000010", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000011", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000012", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000013", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000014", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000015", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000016", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000017", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000018", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000019", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000020", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000021", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000022", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000023", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000024", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000025", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000026", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000027", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000028", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000029", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000030", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000031", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000032", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000033", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000034", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000035", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000036", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000037", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000038", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000039", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000040", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000041", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000042", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000043", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000044", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000045", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000046", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000047", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000048", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000049", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000050", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000051", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000052", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000053", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000054", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000055", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000056", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000057", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000058", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000059", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000060", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000061", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000062", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000063", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000064", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000065", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000066", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000067", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000068", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000069", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000070", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000071", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000072", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000073", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000074", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000075", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000076", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000077", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000078", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000079", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000080", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000081", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000082", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000083", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000084", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000085", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000086", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000087", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000088", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000089", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000090", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000091", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000092", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000093", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000094", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000095", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000096", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000097", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000098", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000099", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000100", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000101", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000102", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000103", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000104", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000105", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000106", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000107", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000108", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000109", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000110", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000111", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000112", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000113", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000114", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000115", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000116", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000117", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000118", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000119", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000120", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000121", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000122", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000123", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000124", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000125", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000126", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000127", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000128", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000129", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000130", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000131", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000132", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000133", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000134", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000135", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000136", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000137", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000138", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000139", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000140", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000141", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000142", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000143", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000144", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000145", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000146", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000147", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000148", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000149", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000150", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000151", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000152", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000153", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000154", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000155", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000156", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000157", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000158", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000159", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000160", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000161", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000162", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000163", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000164", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000165", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000166", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000167", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000168", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000169", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000170", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000171", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000172", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000173", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000174", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000175", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000176", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000177", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000178", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000179", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000180", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000181", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000182", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000183", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000184", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000185", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000186", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000187", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000188", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000189", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000190", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000191", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000192", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000193", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000194", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000195", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000196", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000197", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000198", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000199", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000200", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000201", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000202", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000203", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000204", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000205", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000206", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000207", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000208", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000209", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000210", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000211", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000212", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000213", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000214", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000215", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000216", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000217", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000218", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000219", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000220", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000221", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000222", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000223", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000224", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000225", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000226", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000227", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000228", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000229", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000230", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000231", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000232", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000233", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000234", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000235", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000236", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000237", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000238", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000239", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000240", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000241", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000242", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000243", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000244", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000245", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000246", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000247", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000248", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000249", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000250", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000251", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000252", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000253", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000254", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000255", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000256", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000257", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000258", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000259", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000260", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000261", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000262", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000263", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000264", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000265", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000266", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000267", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000268", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000269", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000270", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000271", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000272", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000273", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000274", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000275", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000276", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000277", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000278", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000279", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000280", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000281", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000282", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000283", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000284", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000285", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000286", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000287", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000288", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000289", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000290", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000291", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000292", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000293", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000294", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000295", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000296", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000297", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000298", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000299", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000300", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000301", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000302", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000303", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000304", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000305", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000306", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000307", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000308", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000309", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000310", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000311", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000312", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000313", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000314", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000315", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000316", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000317", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000318", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000319", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000320", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000321", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000322", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000323", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000324", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000325", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000326", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000327", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000328", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000329", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000330", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000331", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000332", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000333", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000334", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000335", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000336", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000337", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000338", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000339", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000340", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000341", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000342", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000343", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000344", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000345", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000346", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000347", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000348", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000349", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000350", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000351", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000352", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000353", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000354", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000355", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000356", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000357", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000358", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000359", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000360", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000361", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000362", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000363", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000364", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000365", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000366", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000367", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000368", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000369", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000370", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000371", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000372", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000373", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000374", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000375", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000376", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000377", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000378", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000379", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000380", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000381", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000382", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000383", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000384", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000385", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000386", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000387", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000388", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000389", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000390", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000391", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000392", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000393", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000394", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000395", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000396", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000397", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000398", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000399", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000400", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000401", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000402", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000403", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000404", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000405", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000406", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000407", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000408", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000409", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000410", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000411", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000412", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000413", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000414", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000415", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000416", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000417", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000418", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000419", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000420", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000421", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000422", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000423", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000424", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000425", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000426", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000427", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000428", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000429", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000430", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000431", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000432", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000433", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000434", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000435", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000436", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000437", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000438", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000439", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000440", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000441", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000442", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000443", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000444", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000445", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000446", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000447", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000448", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000449", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000450", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000451", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000452", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000453", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000454", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000455", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000456", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000457", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000458", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000459", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000460", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000461", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000462", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000463", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000464", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000465", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000466", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000467", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000468", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000469", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000470", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000471", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000472", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000473", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000474", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000475", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000476", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000477", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000478", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000479", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000480", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000481", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000482", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000483", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000484", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000485", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000486", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000487", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000488", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000489", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000490", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000491", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000492", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000493", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000494", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000495", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000496", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000497", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000498", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000499", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000500", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000501", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000502", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000503", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000504", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000505", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000506", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000507", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000508", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000509", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000510", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000511", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000512", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000513", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000514", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000515", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000516", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000517", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000518", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000519", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000520", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000521", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000522", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000523", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000524", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000525", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000526", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000527", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000528", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000529", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000530", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000531", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000532", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000533", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000534", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000535", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000536", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000537", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000538", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000539", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000540", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000541", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000542", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000543", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000544", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000545", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000546", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000547", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000548", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000549", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000550", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000551", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000552", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000553", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000554", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000555", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000556", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000557", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000558", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000559", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000560", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000561", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000562", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000563", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000564", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000565", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000566", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000567", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000568", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000569", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000570", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000571", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000572", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000573", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000574", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000575", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000576", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000577", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000578", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000579", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000580", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000581", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000582", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000583", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000584", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000585", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000586", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000587", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000588", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000589", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000590", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000591", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000592", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000593", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000594", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000595", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000596", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000597", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000598", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000599", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000600", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000601", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000602", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000603", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000604", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000605", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000606", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000607", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000608", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000609", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000610", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000611", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000612", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000613", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000614", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000615", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000616", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000617", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000618", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000619", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000620", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000621", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000622", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000623", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000624", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000625", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000626", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000627", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000628", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000629", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000630", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000631", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000632", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000633", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000634", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000635", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000636", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000637", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000638", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000639", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000640", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000641", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000642", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000643", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000644", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000645", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000646", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000647", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000648", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000649", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000650", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000651", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000652", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000653", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000654", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000655", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000656", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000657", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000658", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000659", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000660", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000661", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000662", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000663", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000664", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000665", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000666", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000667", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000668", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000669", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000670", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000671", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000672", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000673", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000674", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000675", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000676", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000677", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000678", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000679", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000680", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000681", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000682", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000683", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000684", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000685", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000686", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000687", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000688", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000689", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000690", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000691", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000692", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000693", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000694", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000695", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000696", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000697", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000698", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000699", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000700", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000701", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000702", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000703", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000704", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000705", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000706", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000707", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000708", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000709", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000710", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000711", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000712", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000713", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000714", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000715", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000716", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000717", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000718", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000719", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000720", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000721", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000722", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000723", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000724", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000725", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000726", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000727", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000728", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000729", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000730", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000731", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000732", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000733", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000734", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000735", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000736", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000737", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000738", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000739", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000740", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000741", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000742", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000743", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000744", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000745", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000746", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000747", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000748", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-000749", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000750", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000751", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000752", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000753", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000754", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000755", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000756", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000757", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000758", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000759", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000760", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000761", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000762", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000763", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000764", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000765", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000766", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000767", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000768", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000769", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000770", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000771", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000772", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000773", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000774", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000775", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000776", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000777", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000778", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000779", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000780", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000781", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000782", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000783", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000784", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000785", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000786", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000787", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000788", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000789", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000790", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000791", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000792", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000793", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000794", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000795", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000796", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000797", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000798", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-000799", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000800", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000801", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000802", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000803", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000804", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000805", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000806", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000807", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000808", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000809", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000810", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000811", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000812", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000813", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000814", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000815", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000816", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000817", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000818", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000819", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000820", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000821", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000822", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000823", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000824", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000825", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000826", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000827", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000828", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000829", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000830", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000831", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000832", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000833", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000834", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000835", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000836", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000837", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000838", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000839", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000840", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000841", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000842", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000843", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000844", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000845", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000846", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000847", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000848", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000849", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000850", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000851", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000852", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000853", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000854", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000855", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000856", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000857", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000858", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000859", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000860", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000861", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000862", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-000863", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000864", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000865", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000866", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000867", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000868", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000869", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000870", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000871", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000872", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000873", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000874", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000875", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000876", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000877", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000878", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000879", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000880", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000881", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000882", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000883", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000884", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000885", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000886", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000887", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000888", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000889", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000890", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000891", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000892", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000893", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000894", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000895", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000896", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000897", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000898", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000899", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000900", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000901", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000902", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000903", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000904", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-000905", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000906", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000907", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000908", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000909", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000910", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000911", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000912", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000913", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000914", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000915", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000916", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000917", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000918", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000919", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000920", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000921", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000922", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000923", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000924", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000925", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000926", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000927", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000928", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-000929", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000930", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000931", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000932", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000933", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-000934", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-000935", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000936", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000937", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000938", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000939", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000940", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000941", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000942", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000943", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-000944", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000945", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000946", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000947", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000948", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000949", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000950", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000951", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000952", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000953", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-000954", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000955", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-000956", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000957", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000958", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000959", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000960", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000961", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000962", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000963", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000964", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000965", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-000966", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000967", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000968", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-000969", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-000970", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000971", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000972", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000973", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000974", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-000975", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-000976", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-000977", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000978", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-000979", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000980", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-000981", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000982", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000983", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000984", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000985", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-000986", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000987", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000988", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-000989", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-000990", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-000991", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-000992", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-000993", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-000994", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-000995", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-000996", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-000997", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-000998", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-000999", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001000", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001001", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001002", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001003", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001004", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001005", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001006", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001007", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001008", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001009", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001010", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001011", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001012", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001013", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001014", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001015", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001016", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001017", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001018", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001019", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001020", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001021", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001022", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001023", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001024", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001025", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001026", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001027", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001028", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001029", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001030", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001031", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001032", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001033", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001034", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001035", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001036", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001037", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001038", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001039", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001040", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001041", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001042", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001043", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001044", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001045", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001046", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001047", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001048", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001049", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001050", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001051", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001052", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001053", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001054", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001055", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001056", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001057", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001058", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001059", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001060", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001061", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001062", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001063", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001064", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001065", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001066", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001067", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001068", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001069", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001070", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001071", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001072", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001073", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001074", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001075", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001076", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001077", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001078", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001079", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001080", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001081", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001082", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001083", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001084", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001085", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001086", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001087", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001088", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001089", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001090", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001091", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001092", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001093", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001094", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001095", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001096", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001097", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001098", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001099", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001100", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001101", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001102", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001103", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001104", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001105", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001106", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001107", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001108", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001109", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001110", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001111", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001112", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001113", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001114", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001115", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001116", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001117", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001118", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001119", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001120", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001121", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001122", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001123", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001124", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001125", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001126", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001127", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001128", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001129", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001130", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001131", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001132", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001133", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001134", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001135", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001136", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001137", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001138", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001139", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001140", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001141", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001142", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001143", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001144", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001145", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001146", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001147", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001148", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001149", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001150", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001151", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001152", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001153", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001154", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001155", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001156", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001157", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001158", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001159", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001160", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001161", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001162", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001163", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001164", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001165", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001166", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001167", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001168", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001169", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001170", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001171", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001172", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001173", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001174", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001175", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001176", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001177", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001178", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001179", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001180", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001181", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001182", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001183", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001184", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001185", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001186", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001187", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001188", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001189", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001190", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001191", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001192", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001193", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001194", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001195", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001196", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001197", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001198", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001199", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001200", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001201", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001202", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001203", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001204", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001205", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001206", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001207", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001208", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001209", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001210", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001211", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001212", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001213", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001214", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001215", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001216", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001217", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001218", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001219", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001220", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001221", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001222", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001223", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001224", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001225", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001226", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001227", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001228", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001229", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001230", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001231", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001232", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001233", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001234", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001235", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001236", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001237", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001238", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001239", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001240", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001241", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001242", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001243", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001244", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001245", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001246", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001247", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001248", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001249", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001250", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001251", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001252", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001253", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001254", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001255", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001256", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001257", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001258", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001259", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001260", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001261", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001262", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001263", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001264", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001265", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001266", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001267", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001268", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001269", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001270", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001271", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001272", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001273", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001274", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001275", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001276", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001277", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001278", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001279", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001280", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001281", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001282", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001283", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001284", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001285", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001286", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001287", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001288", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001289", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001290", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001291", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001292", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001293", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001294", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001295", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001296", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001297", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001298", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001299", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001300", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001301", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001302", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001303", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001304", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001305", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001306", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001307", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001308", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001309", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001310", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001311", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001312", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001313", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001314", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001315", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001316", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001317", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001318", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001319", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001320", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001321", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001322", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001323", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001324", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001325", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001326", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001327", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001328", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001329", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001330", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001331", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001332", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001333", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001334", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001335", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001336", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001337", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001338", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001339", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001340", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001341", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001342", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001343", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001344", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001345", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001346", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001347", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001348", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001349", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001350", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001351", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001352", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001353", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001354", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001355", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001356", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001357", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001358", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001359", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001360", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001361", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001362", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001363", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001364", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001365", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001366", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001367", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001368", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001369", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001370", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001371", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001372", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001373", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001374", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001375", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001376", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001377", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001378", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001379", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001380", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001381", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001382", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001383", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001384", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001385", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001386", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001387", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001388", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001389", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001390", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001391", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001392", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001393", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001394", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001395", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001396", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001397", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001398", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001399", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001400", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001401", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001402", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001403", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001404", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001405", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001406", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001407", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001408", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001409", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001410", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001411", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001412", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001413", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001414", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001415", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001416", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001417", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001418", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001419", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001420", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001421", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001422", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001423", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001424", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001425", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001426", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001427", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001428", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001429", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001430", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001431", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001432", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001433", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001434", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001435", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001436", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001437", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001438", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001439", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001440", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001441", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001442", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001443", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001444", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001445", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001446", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001447", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001448", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001449", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001450", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001451", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001452", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001453", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001454", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001455", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001456", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001457", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001458", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001459", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001460", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001461", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001462", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001463", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001464", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001465", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001466", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001467", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001468", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001469", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001470", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001471", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001472", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001473", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001474", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001475", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001476", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001477", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001478", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001479", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001480", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001481", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001482", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001483", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001484", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001485", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001486", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001487", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001488", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001489", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001490", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001491", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001492", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001493", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001494", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001495", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001496", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001497", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001498", "text": "mattress broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001499", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001500", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001501", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001502", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001503", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001504", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001505", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001506", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001507", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001508", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001509", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001510", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001511", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001512", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001513", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001514", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001515", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001516", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001517", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001518", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001519", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001520", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001521", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001522", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001523", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001524", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001525", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001526", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001527", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001528", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001529", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001530", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001531", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001532", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001533", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001534", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001535", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001536", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001537", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001538", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001539", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001540", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001541", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001542", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001543", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001544", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001545", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001546", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001547", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001548", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001549", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001550", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001551", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001552", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001553", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001554", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001555", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001556", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001557", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001558", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001559", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001560", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001561", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001562", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001563", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001564", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001565", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001566", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001567", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001568", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001569", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001570", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001571", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001572", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001573", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001574", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001575", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001576", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001577", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001578", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001579", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001580", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001581", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001582", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001583", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001584", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001585", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001586", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001587", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001588", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001589", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001590", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001591", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001592", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001593", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001594", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001595", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001596", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001597", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001598", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001599", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001600", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001601", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001602", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001603", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001604", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001605", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001606", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001607", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001608", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001609", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001610", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001611", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001612", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001613", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001614", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001615", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001616", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001617", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001618", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001619", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001620", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001621", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001622", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001623", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001624", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001625", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001626", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001627", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001628", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001629", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001630", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001631", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001632", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001633", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001634", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001635", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001636", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001637", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001638", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001639", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001640", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001641", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001642", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001643", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001644", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001645", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001646", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001647", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001648", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001649", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001650", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001651", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001652", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001653", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001654", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001655", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001656", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001657", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001658", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001659", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001660", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001661", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001662", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001663", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001664", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001665", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001666", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001667", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001668", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001669", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001670", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001671", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001672", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001673", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001674", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001675", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001676", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001677", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001678", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001679", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001680", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001681", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001682", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001683", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001684", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001685", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001686", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001687", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001688", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001689", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001690", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001691", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001692", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001693", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001694", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001695", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001696", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001697", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001698", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001699", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001700", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001701", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001702", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001703", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001704", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001705", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001706", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001707", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001708", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001709", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001710", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001711", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001712", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001713", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001714", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001715", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001716", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001717", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001718", "text": "standard jacket, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001719", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001720", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001721", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001722", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001723", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001724", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001725", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001726", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001727", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001728", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001729", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001730", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001731", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001732", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001733", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001734", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001735", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001736", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001737", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001738", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001739", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001740", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001741", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001742", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001743", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001744", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001745", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001746", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001747", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001748", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001749", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001750", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001751", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001752", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001753", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001754", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001755", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001756", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001757", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001758", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001759", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001760", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001761", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001762", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001763", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001764", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001765", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001766", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001767", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001768", "text": "standard lamp, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001769", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001770", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001771", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001772", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001773", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001774", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001775", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001776", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001777", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001778", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001779", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001780", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001781", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001782", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001783", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001784", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001785", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001786", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001787", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001788", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001789", "text": "the kettle was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001790", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001791", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001792", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001793", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001794", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001795", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001796", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001797", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001798", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001799", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001800", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001801", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001802", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001803", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001804", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001805", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001806", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001807", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001808", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001809", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001810", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001811", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001812", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001813", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001814", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001815", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001816", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001817", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001818", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001819", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001820", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001821", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001822", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001823", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001824", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001825", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001826", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001827", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001828", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001829", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001830", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001831", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001832", "text": "loved the backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001833", "text": "jacket broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001834", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001835", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001836", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001837", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001838", "text": "router broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001839", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001840", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001841", "text": "the mattress arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001842", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001843", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001844", "text": "the backpack arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001845", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001846", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001847", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001848", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001849", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001850", "text": "would not buy this monitor again", "label": "negative", "synthetic": true}
+{"id": "syn-001851", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001852", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001853", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001854", "text": "genuinely great backpack", "label": "positive", "synthetic": true}
+{"id": "syn-001855", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001856", "text": "genuinely great lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001857", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001858", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001859", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001860", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001861", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001862", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001863", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001864", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001865", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001866", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001867", "text": "it is a mattress", "label": "neutral", "synthetic": true}
+{"id": "syn-001868", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001869", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001870", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001871", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001872", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001873", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001874", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001875", "text": "lamp exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001876", "text": "would not buy this kettle again", "label": "negative", "synthetic": true}
+{"id": "syn-001877", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001878", "text": "the monitor was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001879", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001880", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001881", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001882", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001883", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001884", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001885", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001886", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001887", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001888", "text": "the kettle arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001889", "text": "kettle exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001890", "text": "mattress exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001891", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001892", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001893", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001894", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001895", "text": "loved the router", "label": "positive", "synthetic": true}
+{"id": "syn-001896", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001897", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001898", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001899", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001900", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001901", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001902", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001903", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001904", "text": "standard backpack, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001905", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001906", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001907", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001908", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001909", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001910", "text": "would not buy this backpack again", "label": "negative", "synthetic": true}
+{"id": "syn-001911", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001912", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001913", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001914", "text": "the mattress was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001915", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001916", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001917", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001918", "text": "it is a lamp", "label": "neutral", "synthetic": true}
+{"id": "syn-001919", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001920", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001921", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001922", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001923", "text": "the monitor arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001924", "text": "the lamp was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001925", "text": "genuinely great jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001926", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001927", "text": "the bike light was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001928", "text": "monitor broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001929", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001930", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001931", "text": "it is a backpack", "label": "neutral", "synthetic": true}
+{"id": "syn-001932", "text": "bike light broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001933", "text": "the bike light arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001934", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001935", "text": "genuinely great mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001936", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001937", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001938", "text": "router exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001939", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001940", "text": "genuinely great bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001941", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001942", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001943", "text": "loved the bike light", "label": "positive", "synthetic": true}
+{"id": "syn-001944", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001945", "text": "would not buy this router again", "label": "negative", "synthetic": true}
+{"id": "syn-001946", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001947", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001948", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001949", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001950", "text": "loved the mattress", "label": "positive", "synthetic": true}
+{"id": "syn-001951", "text": "standard router, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001952", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001953", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001954", "text": "the router arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001955", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001956", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001957", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001958", "text": "would not buy this bike light again", "label": "negative", "synthetic": true}
+{"id": "syn-001959", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001960", "text": "genuinely great monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001961", "text": "loved the kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001962", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001963", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001964", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001965", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001966", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001967", "text": "backpack broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001968", "text": "would not buy this mattress again", "label": "negative", "synthetic": true}
+{"id": "syn-001969", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001970", "text": "standard monitor, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001971", "text": "would not buy this lamp again", "label": "negative", "synthetic": true}
+{"id": "syn-001972", "text": "bike light exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001973", "text": "genuinely great router", "label": "positive", "synthetic": true}
+{"id": "syn-001974", "text": "it is a monitor", "label": "neutral", "synthetic": true}
+{"id": "syn-001975", "text": "standard kettle, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001976", "text": "lamp broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001977", "text": "jacket exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001978", "text": "the jacket was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001979", "text": "it is a router", "label": "neutral", "synthetic": true}
+{"id": "syn-001980", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001981", "text": "loved the lamp", "label": "positive", "synthetic": true}
+{"id": "syn-001982", "text": "loved the monitor", "label": "positive", "synthetic": true}
+{"id": "syn-001983", "text": "the router was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001984", "text": "would not buy this jacket again", "label": "negative", "synthetic": true}
+{"id": "syn-001985", "text": "kettle broke in a week", "label": "negative", "synthetic": true}
+{"id": "syn-001986", "text": "the lamp arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001987", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001988", "text": "monitor exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001989", "text": "it is a kettle", "label": "neutral", "synthetic": true}
+{"id": "syn-001990", "text": "genuinely great kettle", "label": "positive", "synthetic": true}
+{"id": "syn-001991", "text": "standard bike light, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001992", "text": "it is a jacket", "label": "neutral", "synthetic": true}
+{"id": "syn-001993", "text": "the jacket arrived on time", "label": "neutral", "synthetic": true}
+{"id": "syn-001994", "text": "backpack exceeded what I expected", "label": "positive", "synthetic": true}
+{"id": "syn-001995", "text": "loved the jacket", "label": "positive", "synthetic": true}
+{"id": "syn-001996", "text": "standard mattress, nothing notable", "label": "neutral", "synthetic": true}
+{"id": "syn-001997", "text": "it is a bike light", "label": "neutral", "synthetic": true}
+{"id": "syn-001998", "text": "the backpack was a letdown", "label": "negative", "synthetic": true}
+{"id": "syn-001999", "text": "genuinely great kettle", "label": "positive", "synthetic": true}

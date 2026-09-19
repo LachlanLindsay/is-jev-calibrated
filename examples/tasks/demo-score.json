@@ -1,0 +1,14 @@
+{
+  "name": "demo-score",
+  "kind": "score",
+  "question": "Rate this review from 1 (worst) to 5 (best).",
+  "labels": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "source": "jevcal.datasets.synthetic_task (generated, not a benchmark)",
+  "data": "demo-score.jsonl"
+}

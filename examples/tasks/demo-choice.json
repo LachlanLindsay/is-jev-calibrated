@@ -1,0 +1,12 @@
+{
+  "name": "demo-choice",
+  "kind": "choice",
+  "question": "What is the sentiment of this review?",
+  "labels": [
+    "positive",
+    "negative",
+    "neutral"
+  ],
+  "source": "jevcal.datasets.synthetic_task (generated, not a benchmark)",
+  "data": "demo-choice.jsonl"
+}
