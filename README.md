@@ -33,6 +33,10 @@ command — see [Running it for real](#running-it-for-real).
 
 I'd rather ship an audit you can reproduce than a number you have to trust.
 
+[`HANDOVER.md`](HANDOVER.md) is the brief for doing that run: which assumption to
+verify first, the chosen dataset and how to build it, and what the result has to
+carry to be worth publishing.
+
 ## What it measures
 
 | Question | What answers it |
