@@ -160,12 +160,35 @@ def test_a_response_with_no_distribution_fails_loudly(task):
         extract_decision(_body({"type": "choice", "choice": "positive"}), task)
 
 
-def test_a_distribution_that_disagrees_with_the_stated_choice_is_an_error(task):
-    """A mismatch means we are misreading the response, not that Jev is wrong."""
-    with pytest.raises(ExtractionError, match="peaks at"):
+def test_the_answers_own_choice_is_what_gets_scored(task):
+    """The caller acts on `choice`, so that is the decision the audit scores."""
+    predicted, _ = extract_decision(
+        _body({"type": "choice", "choice": "negative",
+               "probabilities": {"positive": 0.5, "negative": 0.5}}), task)
+    assert predicted == "negative"
+
+
+def test_a_choice_one_rounding_quantum_below_the_peak_is_accepted(task):
+    """Probabilities arrive rounded to 0.01, so this gap is expected, not a bug."""
+    predicted, _ = extract_decision(
+        _body({"type": "choice", "choice": "positive",
+               "probabilities": {"positive": 0.46, "negative": 0.47}}), task)
+    assert predicted == "positive"
+
+
+def test_a_choice_far_below_the_peak_is_an_error(task):
+    """That size of gap means we are reading the wrong field, not a near-tie."""
+    with pytest.raises(ExtractionError, match="too large to be rounding"):
         extract_decision(
             _body({"type": "choice", "choice": "negative",
                    "probabilities": {"positive": 0.82, "negative": 0.18}}), task)
+
+
+def test_a_choice_outside_the_label_set_is_an_error(task):
+    with pytest.raises(ExtractionError, match="not one of the task"):
+        extract_decision(
+            _body({"type": "choice", "choice": "elsewhere",
+                   "probabilities": {"positive": 0.8, "negative": 0.2}}), task)
 
 
 def test_a_distribution_is_restricted_to_the_task_labels_and_renormalised(task):

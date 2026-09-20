@@ -86,6 +86,13 @@ INPUT_USD_PER_MTOK = 0.042
 #: pinned after ``probe`` has shown what the endpoint actually returned.
 ProbabilitySource = Literal["auto", "probabilities", "probability"]
 
+#: How far below the distribution's peak the answer's own ``choice`` may sit
+#: before we treat it as evidence that we are misreading the response. The API
+#: rounds probabilities to 0.01 and this client renormalises over the task's
+#: labels, so a stated choice can legitimately land one quantum below the peak;
+#: three quanta of slack absorbs that without hiding a real mismatch.
+_TIE_TOLERANCE = 0.03
+
 
 
 
@@ -280,16 +287,26 @@ def extract_decision(
     else:
         dist = _from_probabilities(answer, task)
 
-    predicted = max(dist, key=lambda k: dist[k])
-    # The response names its own pick. If it disagrees with the argmax of the
-    # distribution we were given, something is wrong with our reading of the
-    # response and a silent mismatch would corrupt every accuracy number.
+    # The answer names its own pick, and that -- not our argmax -- is the
+    # decision a caller acts on, so it is the decision we score. It also settles
+    # ties, which are common: probabilities arrive rounded to 0.01, so two
+    # options landing on the same reported value is routine and picking between
+    # them by dict order would be arbitrary.
+    peak = max(dist, key=lambda k: dist[k])
     stated = answer.get("choice")
-    if isinstance(stated, str) and stated in dist and stated != predicted:
+    if not isinstance(stated, str):
+        return peak, dist
+    if stated not in dist:
+        raise ExtractionError(f"response chose {stated!r}, which is not one of the task's labels")
+    # A stated choice sitting materially below the peak would mean we are
+    # reading the wrong field, not that the model disagrees with itself. One
+    # quantum of rounding is expected; a real gap is not.
+    if dist[peak] - dist[stated] > _TIE_TOLERANCE:
         raise ExtractionError(
-            f"response chose {stated!r} but its distribution peaks at {predicted!r}: {dist}"
+            f"response chose {stated!r} at {dist[stated]:.4f} but its distribution peaks at "
+            f"{peak!r} at {dist[peak]:.4f}, a gap too large to be rounding"
         )
-    return predicted, dist
+    return stated, dist
 
 
 def _expected_source(task: Task) -> ProbabilitySource:
