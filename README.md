@@ -24,18 +24,43 @@ above which it is safe to stop looking.**
 
 ---
 
-## Status: no Jev numbers here yet
+## Status: measured
 
-This repository contains **no measurements of Jev**. The charts and reports you
-can generate right now come from a built-in simulator and are stamped
-`SIMULATED DATA` accordingly. Getting real numbers takes an API key and one
-command — see [Running it for real](#running-it-for-real).
+**Jev is well calibrated in the aggregate and badly calibrated where it matters
+most.** 48,600 decisions against `jev-1.13.0` on CLINC150, 0 failed. The full
+writeup is in [`results/README.md`](results/README.md).
 
-I'd rather ship an audit you can reproduce than a number you have to trust.
+On 150-way intent classification it gets **92.63%** right against a 0.67%
+majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and an
+AUROC of 0.851 — confidence ranks its own errors well. That is a good result and,
+as far as I can tell, the first reliability diagram published for this model.
 
-[`HANDOVER.md`](HANDOVER.md) is the brief for doing that run: which assumption to
-verify first, the chosen dataset and how to build it, and what the result has to
-carry to be worth publishing.
+Three things qualify it:
+
+- It reports **exactly 1.000 — literal certainty — on 62% of all decisions**, and
+  is wrong 219 of those 13,977 times. A probability of 1.0 is a claim that cannot
+  be right, and it is the single most common thing the model says.
+- Its probabilities are **too extreme in shape**: a logistic refit gives a slope
+  of 0.28, where 1.00 would be correct.
+- On the **binary in-scope/out-of-scope gate** — the confidence-gating use case in
+  its purest form — reliability goes **non-monotone at the top** (the 0.93–1.00
+  band claims 94.8% and delivers 80.6%, worse than the band below it), and **no
+  threshold meets an error budget of even 10%**. Asked instead as a Choice with a
+  rejection option, the same question is answered well: 72.7% of out-of-scope
+  queries caught at a 0.89% false-alarm rate.
+
+Calibration is per-distribution and this is one dataset, so it licenses one
+claim: short-utterance intent classification with informative label names. It is
+not "Jev is calibrated". The numbers come from the direct API rather than the
+gateway; see the terms note at the end of the writeup.
+
+The charts and per-experiment reports are regenerated from the committed task
+specs rather than checked in — `python scripts/build_clinc150.py`, then
+`python -m jevcal run`, then `python -m jevcal analyze`.
+
+[`HANDOVER.md`](HANDOVER.md) was the brief for the run. Its highest-risk
+assumption turned out to be wrong in a way worth reading:
+[`docs/api-notes.md`](docs/api-notes.md) is the verification trail.
 
 ## What it measures
 
