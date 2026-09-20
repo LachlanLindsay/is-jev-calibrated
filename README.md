@@ -26,37 +26,44 @@ above which it is safe to stop looking.**
 
 ## Status: measured
 
-**Jev is well calibrated in the aggregate and badly calibrated where it matters
-most.** 48,600 decisions against `jev-1.13.0` on CLINC150, 0 failed. The full
-writeup is in [`results/README.md`](results/README.md).
+**Jev is well calibrated on CLINC150, and the obvious headline number understates
+it.** 48,600 decisions against `jev-1.13.0`, 0 failed. Full writeup in
+[`results/README.md`](results/README.md).
 
 On 150-way intent classification it gets **92.63%** right against a 0.67%
-majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and an
-AUROC of 0.851 — confidence ranks its own errors well. That is a good result and,
-as far as I can tell, the first reliability diagram published for this model.
+majority-class baseline, with an **ECE of 0.021** and an AUROC of 0.851 —
+confidence ranks its own errors well. As far as I can tell, the first reliability
+diagram published for this model.
 
-Three things qualify it:
+![Reliability diagram](results/clinc150-inscope/reliability.png)
 
-- It reports **exactly 1.000 — literal certainty — on 62% of all decisions**, and
-  is wrong 219 of those 13,977 times. A probability of 1.0 is a claim that cannot
-  be right, and it is the single most common thing the model says.
-- Its probabilities are **too extreme in shape**: a logistic refit gives a slope
-  of 0.28, where 1.00 would be correct.
-- On the **binary in-scope/out-of-scope gate** — the confidence-gating use case in
-  its purest form — reliability goes **non-monotone at the top** (the 0.93–1.00
-  band claims 94.8% and delivers 80.6%, worse than the band below it), and **no
-  threshold meets an error budget of even 10%**. Asked instead as a Choice with a
-  rejection option, the same question is answered well: 72.7% of out-of-scope
-  queries caught at a 0.89% false-alarm rate.
+Three things qualify it, and they do not all point the same way.
+
+**Most of the measured miscalibration is the dataset, not the model.** 78% of the
+errors Jev makes while claiming certainty come from six pairs of near-synonymous
+intents, several of which it arguably answers better than CLINC150's gold label
+does — `"when was my last oil change"` is labelled `last_maintenance` when an
+`oil_change_when` intent exists. Score those six as ties and ECE drops from 0.021
+to **0.0066**, overconfidence from +2.08% to **+0.31%**. The strict number stays
+the headline; [`results/label-noise.md`](results/label-noise.md) explains why and
+names the pairs so you can disagree.
+
+**It still claims certainty it does not have.** Even forgiving every contested
+pair, Jev reports a probability of **exactly 1.000** on **62% of all decisions**
+and is wrong **48** times when it does. A probability of 1.0 says no other
+outcome is possible.
+
+**The binary scope gate fails outright.** On "is this in scope?", reliability goes
+**non-monotone at the top** — the 0.93–1.00 band claims 94.8% and delivers 80.6%,
+worse than the band below it — and **no threshold meets an error budget of even
+10%**. That result carries no label ambiguity. Asked instead as a Choice with a
+rejection option, the same question is answered well: 72.7% of out-of-scope
+queries caught at a 0.89% false-alarm rate. Which primitive you pick matters.
 
 Calibration is per-distribution and this is one dataset, so it licenses one
 claim: short-utterance intent classification with informative label names. It is
-not "Jev is calibrated". The numbers come from the direct API rather than the
+not "Jev is calibrated". Numbers come from the direct API rather than the
 gateway; see the terms note at the end of the writeup.
-
-The charts and per-experiment reports are regenerated from the committed task
-specs rather than checked in — `python scripts/build_clinc150.py`, then
-`python -m jevcal run`, then `python -m jevcal analyze`.
 
 [`HANDOVER.md`](HANDOVER.md) was the brief for the run. Its highest-risk
 assumption turned out to be wrong in a way worth reading:

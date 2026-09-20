@@ -1,0 +1,66 @@
+{
+  "task": "clinc150-inscope",
+  "n": 22500,
+  "strict": {
+    "accuracy": 0.9262666666666667,
+    "errors": 1659,
+    "overconfidence": 0.02080244668911324,
+    "ece": 0.020937046015712748
+  },
+  "lenient": {
+    "accuracy": 0.9439555555555555,
+    "errors": 1261,
+    "overconfidence": 0.0031135578002243758,
+    "ece": 0.006590828282828343
+  },
+  "at_probability_one": {
+    "n": 13977,
+    "strict_errors": 219,
+    "lenient_errors": 48
+  },
+  "affected_decisions": 398,
+  "pairs": [
+    {
+      "gold": "reminder_update",
+      "predicted": "reminder",
+      "forward": 149,
+      "reverse": 0,
+      "rationale": "'set a reminder to call my mom' is labelled reminder_update, but nothing is being updated -- these are plain reminder-creation utterances."
+    },
+    {
+      "gold": "accept_reservations",
+      "predicted": "restaurant_reservation",
+      "forward": 140,
+      "reverse": 0,
+      "rationale": "'can i make a reservation at chevy's' is genuinely ambiguous between asking whether reservations are possible and asking for one to be made."
+    },
+    {
+      "gold": "improve_credit_score",
+      "predicted": "credit_score",
+      "forward": 44,
+      "reverse": 0,
+      "rationale": "'will late payments hurt my credit' asks what affects a score, not how to improve one; credit_score is at least as defensible."
+    },
+    {
+      "gold": "last_maintenance",
+      "predicted": "oil_change_when",
+      "forward": 39,
+      "reverse": 0,
+      "rationale": "'when was my last oil change' is labelled last_maintenance even though an intent named oil_change_when exists. The prediction is the better answer."
+    },
+    {
+      "gold": "ingredients_list",
+      "predicted": "recipe",
+      "forward": 15,
+      "reverse": 2,
+      "rationale": "'give me a recipe for tacos' is labelled ingredients_list. It asks for a recipe."
+    },
+    {
+      "gold": "pto_used",
+      "predicted": "pto_balance",
+      "forward": 8,
+      "reverse": 1,
+      "rationale": "'how much pto do i have left' is labelled pto_used. 'Left' is a balance."
+    }
+  ]
+}

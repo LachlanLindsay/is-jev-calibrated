@@ -11,4 +11,4 @@ report/
 *.png.bak
 data/
 tasks/*.jsonl
-results/*/
+.DS_Store

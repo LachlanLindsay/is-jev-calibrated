@@ -1,0 +1,27 @@
+{
+  "task": "clinc150-gate",
+  "n": 2400,
+  "seed": 0,
+  "rows": [
+    {
+      "target": 0.01,
+      "threshold": null,
+      "status": "none"
+    },
+    {
+      "target": 0.02,
+      "threshold": null,
+      "status": "none"
+    },
+    {
+      "target": 0.05,
+      "threshold": null,
+      "status": "none"
+    },
+    {
+      "target": 0.1,
+      "threshold": null,
+      "status": "none"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "task": "clinc150-inscope",
+  "n": 22500,
+  "seed": 0,
+  "rows": [
+    {
+      "target": 0.01,
+      "threshold": null,
+      "status": "none"
+    },
+    {
+      "target": 0.02,
+      "threshold": 1.0,
+      "status": "guaranteed",
+      "fit_error": 0.0158052114480991,
+      "held_error": 0.015530629853321876,
+      "held_coverage": 0.6181333333333333,
+      "held_n": 6954,
+      "holds": true
+    },
+    {
+      "target": 0.05,
+      "threshold": 0.7000000000000001,
+      "status": "guaranteed",
+      "fit_error": 0.04531982025050196,
+      "held_error": 0.04404614357898751,
+      "held_coverage": 0.9323555555555556,
+      "held_n": 10489,
+      "holds": true
+    },
+    {
+      "target": 0.1,
+      "threshold": 0.18181818181818182,
+      "status": "guaranteed",
+      "fit_error": 0.07413333333333338,
+      "held_error": 0.07325095564050133,
+      "held_coverage": 0.9999111111111111,
+      "held_n": 11249,
+      "holds": true
+    }
+  ]
+}
