@@ -12,49 +12,50 @@ are committed and the loader is deterministic.
 
 ## The short version
 
-**Jev is well calibrated on this task, and the headline number understates it.**
-On 150-way intent classification it gets **92.6%** right against a 0.67%
-majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and an
-**AUROC of 0.851** — confidence ranks its own errors well, which is what a gate
-relies on.
+**Jev is well calibrated in the aggregate, and its confident errors are
+systematic.** On 150-way intent classification it gets **92.6%** right against a
+0.67% majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and
+an **AUROC of 0.851** — confidence ranks its own errors well, which is what a
+gate relies on.
 
-Two things qualify that, pulling in opposite directions.
+Three things qualify it.
 
-**Downward.** About two-thirds of the measured miscalibration is CLINC150's
-annotation noise rather than Jev's overconfidence. 78% of the errors it makes
-while claiming certainty come from six pairs of near-synonymous intents, several
-of which Jev arguably answers *better* than the gold label does. Score those as
-ties and ECE falls from 0.021 to **0.0066** and overconfidence from +2.08% to
-**+0.31%**. The strict number stays the headline — see
-[`label-noise.md`](label-noise.md) for why, and for the pair list.
+**It reports certainty it does not have.** A probability of *exactly 1.000* on
+**62% of all decisions**, and wrong 219 of those 13,977 times.
 
-**Upward.** Even with every contested pair forgiven, Jev reports a probability of
-**exactly 1.000** on **62% of all decisions** and is wrong **48** times when it
-does. A probability of 1.0 asserts no other outcome is possible; that is a claim
-that cannot be true, and it is the single most common thing this model says.
+**Those errors are systematic, not random.** 74% of them are the model collapsing
+one of four distinctions CLINC150 draws on purpose — speech act, tense, value vs
+mechanism, possibility vs execution — always in the same direction, 372 forward
+and 0 reverse, at full confidence. That is the axis that determines what a system
+should actually *do*. See [`confident-errors.md`](confident-errors.md).
 
-And on the **binary in-scope/out-of-scope gate** — the confidence-gating use case
-in its purest form — reliability goes **non-monotone at the top** and no
-threshold meets an error budget of even 10%. That result is untouched by the
-label-noise question, because it uses `true`/`false` labels with no annotation
-ambiguity. It is the sharpest negative finding here.
+**The binary in-scope/out-of-scope gate fails outright.** Reliability goes
+non-monotone at the top and no threshold meets an error budget of even 10%. It is
+the sharpest negative finding here.
+
+> **Correction.** An earlier version of this writeup claimed two-thirds of the
+> measured miscalibration was CLINC150 annotation noise. That was wrong — it came
+> from inspecting only the errors and never checking what the dataset labels with
+> the other intent in each pair. Genuine annotation noise accounts for about 0.1%
+> of the run and moves ECE by 0.0007. The strict numbers below were right all
+> along. [`confident-errors.md`](confident-errors.md) has the full retraction.
 
 ## E1 — 150-way Choice, in-scope (22,500 decisions)
 
 ![Reliability diagram, 150-way in-scope](clinc150-inscope/reliability.png)
 
-| metric | strict | six contested pairs as ties |
-| --- | --- | --- |
-| accuracy | 92.63% | 94.40% |
-| majority-class baseline | 0.67% | 0.67% |
-| mean confidence | 94.71% | 94.71% |
-| overconfidence | +2.08% | +0.31% |
-| ECE, 15 equal-width bins | 0.0209 (CI 0.0188–0.0245) | 0.0066 |
-| ECE, 15 equal-mass bins | 0.0208 | — |
-| MCE (bins n ≥ 30) | 0.0714 | — |
-| AUROC | 0.851 | — |
-| logistic slope / intercept | 0.283 / +0.843 | — |
-| latency p50 / p95 | 160 ms / 284 ms | — |
+| metric | value |
+| --- | --- |
+| accuracy | 92.63% |
+| majority-class baseline | 0.67% |
+| mean confidence | 94.71% |
+| overconfidence | +2.08% |
+| ECE, 15 equal-width bins | 0.0209 (95% CI 0.0188–0.0245) |
+| ECE, 15 equal-mass bins | 0.0208 |
+| MCE (bins n ≥ 30) | 0.0714 |
+| AUROC | 0.851 |
+| logistic slope / intercept | 0.283 / +0.843 |
+| latency p50 / p95 | 160 ms / 284 ms |
 
 The two binning schemes agree to within 0.0001, so the headline is not an
 artifact of bin count.
@@ -81,7 +82,7 @@ At the resolution the API reports — probabilities are quantised to 0.01:
 
 ![Confidence histogram](clinc150-inscope/confidence.png)
 
-| reported | n | share | accuracy (strict) | gap |
+| reported | n | share | accuracy | gap |
 | --- | --- | --- | --- | --- |
 | 1.00 | 13,977 | 62.1% | 98.43% | +1.57% |
 | 0.99 | 1,710 | 7.6% | 96.08% | +2.92% |
@@ -191,8 +192,9 @@ they are interchangeable on tasks with fewer options or flatter answers.
 
 - **One dataset, one claim.** Short-utterance intent classification with
   informative label names. Not "Jev is calibrated".
-- **Label noise sets a floor.** Around 1.4 points of ECE on this dataset is
-  annotation disagreement. See [`label-noise.md`](label-noise.md).
+- **Annotation noise is small here.** About 0.1% of the run sits on genuinely
+  questionable labels, worth 0.0007 of ECE. See
+  [`confident-errors.md`](confident-errors.md).
 - **Contamination.** CLINC150 has been public since 2019 and is very likely in
   pretraining data. This matters less for calibration than for accuracy, but the
   92.6% should be read with it in mind.

@@ -26,39 +26,37 @@ above which it is safe to stop looking.**
 
 ## Status: measured
 
-**Jev is well calibrated on CLINC150, and the obvious headline number understates
-it.** 48,600 decisions against `jev-1.13.0`, 0 failed. Full writeup in
-[`results/README.md`](results/README.md).
+**Jev is well calibrated in the aggregate, and its confident errors are
+systematic.** 48,600 decisions against `jev-1.13.0` on CLINC150, 0 failed. Full
+writeup in [`results/README.md`](results/README.md).
 
 On 150-way intent classification it gets **92.63%** right against a 0.67%
-majority-class baseline, with an **ECE of 0.021** and an AUROC of 0.851 —
-confidence ranks its own errors well. As far as I can tell, the first reliability
-diagram published for this model.
+majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and an
+AUROC of 0.851 — confidence ranks its own errors well. As far as I can tell, the
+first reliability diagram published for this model.
 
 ![Reliability diagram](results/clinc150-inscope/reliability.png)
 
-Three things qualify it, and they do not all point the same way.
+Three things qualify it.
 
-**Most of the measured miscalibration is the dataset, not the model.** 78% of the
-errors Jev makes while claiming certainty come from six pairs of near-synonymous
-intents, several of which it arguably answers better than CLINC150's gold label
-does — `"when was my last oil change"` is labelled `last_maintenance` when an
-`oil_change_when` intent exists. Score those six as ties and ECE drops from 0.021
-to **0.0066**, overconfidence from +2.08% to **+0.31%**. The strict number stays
-the headline; [`results/label-noise.md`](results/label-noise.md) explains why and
-names the pairs so you can disagree.
+**It reports certainty it does not have.** A probability of *exactly 1.000* on
+**62% of all decisions**, wrong 219 of those 13,977 times. 1.0 asserts that no
+other outcome is possible.
 
-**It still claims certainty it does not have.** Even forgiving every contested
-pair, Jev reports a probability of **exactly 1.000** on **62% of all decisions**
-and is wrong **48** times when it does. A probability of 1.0 says no other
-outcome is possible.
+**Those errors are not random.** 74% of them are the model collapsing one of four
+distinctions CLINC150 draws deliberately — read vs write, past vs future, query a
+value vs change it, possible vs do-it. `"remind me to call bob"` and `"what
+reminders did i have"` are both about reminders; only one asks the assistant to
+create something. Jev loses that, 372 times in one direction and 0 in the other,
+at full confidence. That axis is precisely what tells a system what to *do*.
+[`results/confident-errors.md`](results/confident-errors.md) has the analysis.
 
 **The binary scope gate fails outright.** On "is this in scope?", reliability goes
 **non-monotone at the top** — the 0.93–1.00 band claims 94.8% and delivers 80.6%,
-worse than the band below it — and **no threshold meets an error budget of even
-10%**. That result carries no label ambiguity. Asked instead as a Choice with a
-rejection option, the same question is answered well: 72.7% of out-of-scope
-queries caught at a 0.89% false-alarm rate. Which primitive you pick matters.
+worse than the band below — and **no threshold meets an error budget of even
+10%**. Asked instead as a Choice with a rejection option, the same question is
+answered well: 72.7% of out-of-scope queries caught at a 0.89% false-alarm rate.
+Which primitive you pick matters more than you would expect.
 
 Calibration is per-distribution and this is one dataset, so it licenses one
 claim: short-utterance intent classification with informative label names. It is

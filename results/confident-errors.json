@@ -1,0 +1,61 @@
+{
+  "task": "clinc150-inscope",
+  "n": 22500,
+  "accuracy": 0.9262666666666667,
+  "ece": 0.020937046015712748,
+  "at_probability_one": {
+    "n": 13977,
+    "errors": 219,
+    "explained_by_collapse": 162
+  },
+  "pairs": [
+    {
+      "gold": "reminder_update",
+      "predicted": "reminder",
+      "errors": 149,
+      "errors_at_one": 105,
+      "kind": "collapsed",
+      "note": "speech act: 'reminder' rows read the list back ('what reminders did i have'); 'reminder_update' rows create one ('remind me to call bob')."
+    },
+    {
+      "gold": "accept_reservations",
+      "predicted": "restaurant_reservation",
+      "errors": 140,
+      "errors_at_one": 30,
+      "kind": "collapsed",
+      "note": "possibility vs execution: 'restaurant_reservation' rows all carry a party size and a time ('reserve a table for 3 at 7'); these ask only whether booking is possible ('does olive garden take reservations')."
+    },
+    {
+      "gold": "improve_credit_score",
+      "predicted": "credit_score",
+      "errors": 44,
+      "errors_at_one": 17,
+      "kind": "collapsed",
+      "note": "value vs mechanism: 'credit_score' rows query the number ('show me my credit score'); 'improve_credit_score' rows are about what raises or harms it."
+    },
+    {
+      "gold": "last_maintenance",
+      "predicted": "oil_change_when",
+      "errors": 39,
+      "errors_at_one": 10,
+      "kind": "collapsed",
+      "note": "tense: 'oil_change_when' rows are all forward-looking ('when will i need my next oil change'); these ask about the past."
+    },
+    {
+      "gold": "pto_used",
+      "predicted": "pto_balance",
+      "errors": 8,
+      "errors_at_one": 4,
+      "kind": "questionable",
+      "note": "'how much pto do i have left' is labelled pto_used, but 'pto_balance' rows say exactly that ('how many pto days do i have left')."
+    },
+    {
+      "gold": "ingredients_list",
+      "predicted": "recipe",
+      "errors": 15,
+      "errors_at_one": 5,
+      "kind": "questionable",
+      "note": "'show me the recipe for broccoli cheddar soup' is labelled ingredients_list while 'recipe' rows include 'find a recipe for baked ziti'. Mixed."
+    }
+  ]
+}
