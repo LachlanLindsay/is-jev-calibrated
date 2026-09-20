@@ -26,46 +26,46 @@ above which it is safe to stop looking.**
 
 ## Status: measured
 
-**Jev is well calibrated in the aggregate, and its confident errors are
-systematic.** 48,600 decisions against `jev-1.13.0` on CLINC150, 0 failed. Full
-writeup in [`results/README.md`](results/README.md).
+**Jev is well calibrated on this task — and how you describe your options
+matters more than the model does.** 51,000 decisions against `jev-1.13.0` on
+CLINC150, 0 failed, $5.16. Full writeup, written for engineers with no stats
+background, in [`results/README.md`](results/README.md).
 
-On 150-way intent classification it gets **92.63%** right against a 0.67%
-majority-class baseline, with an **ECE of 0.021** (95% CI 0.019–0.024) and an
-AUROC of 0.851 — confidence ranks its own errors well. As far as I can tell, the
-first reliability diagram published for this model.
+On 150-way intent classification: **92.63%** accuracy where guessing gets 0.67%,
+**ECE 0.021**, AUROC 0.851. As far as I can tell, the first reliability diagram
+published for this model.
 
 ![Reliability diagram](results/clinc150-inscope/reliability.png)
 
-Three things qualify it.
+Three findings worth your time.
+
+**Most of the miscalibration we measured was our own prompt.** We sent 150 class
+names with no descriptions — `"reminder_update": "reminder update"` — which says
+nothing about what separates it from `reminder`. Adding one sentence of
+description to 16 of the 150 classes cut errors on those rows by **63%** and
+miscalibration **eightfold** (ECE 0.1701 → 0.0207). TypeSafe's docs tell you to
+write real descriptions. They are right, and the cost of ignoring them is large.
 
 **It reports certainty it does not have.** A probability of *exactly 1.000* on
-**62% of all decisions**, wrong 219 of those 13,977 times. 1.0 asserts that no
-other outcome is possible.
+**62% of all decisions**, wrong 219 of those times. If your code branches on
+`confidence == 1.0` you are getting a 1.6% error rate, not a guarantee.
 
-**Those errors are not random.** 74% of them are the model collapsing one of four
-distinctions CLINC150 draws deliberately — read vs write, past vs future, query a
-value vs change it, possible vs do-it. `"remind me to call bob"` and `"what
-reminders did i have"` are both about reminders; only one asks the assistant to
-create something. Jev loses that, 372 times in one direction and 0 in the other,
-at full confidence. That axis is precisely what tells a system what to *do*.
-[`results/confident-errors.md`](results/confident-errors.md) has the analysis.
-
-**The binary scope gate fails outright.** On "is this in scope?", reliability goes
-**non-monotone at the top** — the 0.93–1.00 band claims 94.8% and delivers 80.6%,
-worse than the band below — and **no threshold meets an error budget of even
-10%**. Asked instead as a Choice with a rejection option, the same question is
-answered well: 72.7% of out-of-scope queries caught at a 0.89% false-alarm rate.
-Which primitive you pick matters more than you would expect.
+**The boolean scope gate fails outright.** Asked "is this in scope?" as a
+yes/no, confidence turns over at the top — the 0.93–1.00 band delivers *less*
+accuracy than the band below it — and **no threshold meets an error budget of
+even 10%**. Asked as a Choice with a rejection option, the same question works:
+72.7% of out-of-scope queries caught at a 0.89% false-alarm rate.
 
 Calibration is per-distribution and this is one dataset, so it licenses one
-claim: short-utterance intent classification with informative label names. It is
+claim: short-utterance intent classification with informative class names. It is
 not "Jev is calibrated". Numbers come from the direct API rather than the
 gateway; see the terms note at the end of the writeup.
 
 [`HANDOVER.md`](HANDOVER.md) was the brief for the run. Its highest-risk
 assumption turned out to be wrong in a way worth reading:
-[`docs/api-notes.md`](docs/api-notes.md) is the verification trail.
+[`docs/api-notes.md`](docs/api-notes.md) is the verification trail, and
+[`results/confident-errors.md`](results/confident-errors.md) documents a
+correction we had to publish against ourselves.
 
 ## What it measures
 
