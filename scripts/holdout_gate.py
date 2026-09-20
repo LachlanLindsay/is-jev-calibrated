@@ -21,7 +21,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from jevcal.runner import align, read_predictions
 from jevcal.selective import coverage_at_threshold, recommend_threshold
@@ -70,11 +73,11 @@ def main() -> int:
         # whether the held-out error stays under it.
         holds = out.n > 0 and out.error <= target
         print(f"{target:>7.0%}  {rec.threshold:>9.4f}  {status:>11}  "
-              f"{rec.point.error:>8.4f}  {out.error:>8.4f}  {out.coverage:>8.1%}  {out.n:>7,}  "
+              f"{rec.observed_error:>8.4f}  {out.error:>8.4f}  {out.coverage:>8.1%}  {out.n:>7,}  "
               f"{'yes' if holds else 'NO'}")
         rows.append({
             "target": target, "threshold": rec.threshold, "status": status,
-            "fit_error": rec.point.error, "held_error": out.error,
+            "fit_error": rec.observed_error, "held_error": out.error,
             "held_coverage": out.coverage, "held_n": out.n, "holds": holds,
         })
 

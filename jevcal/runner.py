@@ -190,6 +190,7 @@ def read_predictions(path: str | Path) -> Iterator[Prediction]:
                 distribution=row.get("distribution"),
                 latency_ms=row.get("latency_ms"),
                 cost_usd=row.get("cost_usd"),
+                reported_confidence=row.get("reported_confidence"),
                 model=row.get("model", ""),
                 error=row.get("error"),
                 raw=row.get("raw"),
