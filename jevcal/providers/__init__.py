@@ -27,9 +27,10 @@ def build_provider(name: str, **kwargs: Any) -> Provider:
             "base_url",
             "api_key",
             "probability_source",
+            "surface",
             "timeout",
             "max_retries",
-            "request_logprobs",
+            "zero_data_retention",
             "keep_raw",
         }
         return GatewayProvider(**{k: v for k, v in kwargs.items() if k in allowed})

@@ -1,0 +1,13 @@
+{
+  "name": "clinc150-gate",
+  "kind": "noul",
+  "question": "Is this user utterance something the assistant can handle?",
+  "instructions": "The assistant handles a fixed set of 150 everyday personal-assistant intents: banking, travel, vehicles, small talk, utilities, work and home automation. Answer true if the utterance is a request of that kind, and false if it falls outside what the assistant covers.",
+  "labels": [
+    "true",
+    "false"
+  ],
+  "data": "clinc150-gate.jsonl",
+  "source": "CLINC150 (Larson et al., EMNLP 2019), CC BY-SA 3.0, https://raw.githubusercontent.com/clinc/oos-eval/master/data/data_full.json",
+  "notes": "Balanced 50/50: all 1,200 out-of-scope rows against an equal number of in-scope rows sampled with seed 0, so the majority-class baseline is 50%. The 150 intents are described to the model in the instructions rather than enumerated, because a Noul takes no option list."
+}

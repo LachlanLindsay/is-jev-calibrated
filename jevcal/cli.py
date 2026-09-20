@@ -29,12 +29,17 @@ def _add_task_args(p: argparse.ArgumentParser) -> None:
 
 def _add_provider_args(p: argparse.ArgumentParser) -> None:
     p.add_argument("--provider", default="gateway", choices=("gateway", "simulated"),
-                   help="gateway = the real model via the Vercel AI Gateway; "
+                   help="gateway = the real model via its evaluation API; "
                         "simulated = offline synthetic data, for testing the pipeline")
-    p.add_argument("--model", default="typesafe-ai/jev", help="model id (gateway provider)")
+    p.add_argument("--surface", default="gateway", choices=("gateway", "typesafe"),
+                   help="which endpoint serves Jev: 'gateway' = Vercel AI Gateway "
+                        "/v1/evaluate (generally available); 'typesafe' = TypeSafe's own "
+                        "/v1/systemone (waitlisted; check your agreement before publishing)")
+    p.add_argument("--model", default="", help="model id; defaults to the surface's own default")
     p.add_argument("--probability-source", default="auto",
-                   choices=("auto", "body", "logprobs", "content"),
-                   help="where to read the probability distribution from; run `probe` first")
+                   choices=("auto", "probabilities", "probability"),
+                   help="which response field carries the distribution; 'auto' picks the one "
+                        "matching the task kind, which is almost always right. Run `probe` first")
     p.add_argument("--concurrency", type=int, default=8)
     p.add_argument("--no-resume", action="store_true", help="start the results file from scratch")
     p.add_argument("--keep-raw", action="store_true", help="store full response bodies (large)")
@@ -64,6 +69,7 @@ def _make_provider(args: argparse.Namespace):
     return build_provider(
         args.provider,
         model=args.model,
+        surface=args.surface,
         probability_source=args.probability_source,
         keep_raw=args.keep_raw,
         temperature=args.sim_temperature,
@@ -215,7 +221,11 @@ def cmd_probe(args: argparse.Namespace) -> int:
     from .providers.gateway import GatewayProvider, extract_decision
 
     provider: GatewayProvider = build_provider(
-        "gateway", model=args.model, probability_source=args.probability_source, keep_raw=True
+        "gateway",
+        model=args.model,
+        surface=args.surface,
+        probability_source=args.probability_source,
+        keep_raw=True,
     )  # type: ignore[assignment]
     example = task.examples[0]
     print("--- request ---")
@@ -223,8 +233,9 @@ def cmd_probe(args: argparse.Namespace) -> int:
     body = provider.raw_call(task, example)
     print("--- response ---")
     print(json.dumps(body, indent=2))
+    print(f"--- endpoint: {provider.base_url}/{provider._path} ---")
     print("--- extraction ---")
-    for source in ("body", "logprobs", "content"):
+    for source in ("probabilities", "probability"):
         try:
             predicted, dist = extract_decision(body, task, source)  # type: ignore[arg-type]
             print(f"{source}: {predicted!r} at {dist[predicted]:.4f}  {dist}")

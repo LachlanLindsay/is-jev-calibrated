@@ -50,6 +50,12 @@ class Task:
     examples: tuple[Example, ...]
     instructions: str = ""
     source: str = ""
+    #: Optional per-label descriptions, sent to the model alongside the option
+    #: names. Jev's Choice/Score questions take a description per option and the
+    #: docs are explicit that they carry real signal, so whatever is sent here is
+    #: part of the experiment and belongs in the committed task spec. When a
+    #: label has no entry the provider sends the label itself.
+    criteria: dict[str, str] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if self.kind not in ("choice", "score", "noul"):
@@ -65,6 +71,9 @@ class Task:
         unknown = {e.label for e in self.examples} - set(self.labels)
         if unknown:
             raise ValueError(f"examples carry labels outside the task's label set: {sorted(unknown)}")
+        stray = set(self.criteria) - set(self.labels)
+        if stray:
+            raise ValueError(f"criteria describe labels not in the task: {sorted(stray)}")
 
     def label_index(self, label: str) -> int:
         return self.labels.index(label)
@@ -88,6 +97,7 @@ class Task:
             examples=tuple(examples[:n]),
             instructions=self.instructions,
             source=self.source,
+            criteria=self.criteria,
         )
 
 
@@ -107,6 +117,13 @@ class Prediction:
     distribution: dict[str, float] | None = None
     latency_ms: float | None = None
     cost_usd: float | None = None
+    #: Jev's own ``confidence`` statistic, when the surface returns one. It is
+    #: *not* the probability of ``predicted``: it is 1 - the normalised entropy
+    #: of the whole distribution, so it answers "how peaked is this?" rather
+    #: than "how likely is this to be right?". Recorded because TypeSafe's docs
+    #: tell users to gate on it, which makes it worth auditing separately -- but
+    #: it must never be plotted against the reliability diagonal.
+    reported_confidence: float | None = None
     model: str = ""
     error: str | None = None
     raw: dict[str, Any] | None = None
@@ -161,6 +178,7 @@ def load_task(path: str | Path) -> Task:
         examples=examples,
         instructions=spec.get("instructions", ""),
         source=spec.get("source", str(path)),
+        criteria=dict(spec.get("criteria", {}) or {}),
     )
 
 

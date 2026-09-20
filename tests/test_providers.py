@@ -91,107 +91,158 @@ def task() -> Task:
     )
 
 
-def test_distribution_is_read_from_a_native_field(task):
-    body = {"choices": [{"message": {"content": '{"answer":"positive"}'}}],
-            "probabilities": {"positive": 0.82, "negative": 0.18}}
-    predicted, dist = extract_decision(body, task)
+def _body(answer: dict, **extra) -> dict:
+    """A response in the shape both evaluation surfaces actually return.
+
+    Captured from live calls to api.typesafe.ai/v1/systemone on 2026-09-19; the
+    gateway's /v1/evaluate differs only in the usage key casing and in calling a
+    noul a boolean.
+    """
+    return {"model": "jev-1.13.0", "answers": {"decision": answer},
+            "usage": {"input_tokens": 359, "output_tokens": 38}, **extra}
+
+
+def test_a_choice_distribution_is_read_from_the_answer(task):
+    predicted, dist = extract_decision(
+        _body({"type": "choice", "choice": "positive", "confidence": 0.64,
+               "probabilities": {"positive": 0.82, "negative": 0.18}}), task)
     assert predicted == "positive"
     assert dist["positive"] == pytest.approx(0.82)
 
 
-def test_distribution_is_read_from_logprobs(task):
-    body = {
-        "choices": [
-            {
-                "message": {"content": '{"answer":"negative"}'},
-                "logprobs": {
-                    "content": [
-                        {"token": "{", "top_logprobs": [{"token": "{", "logprob": 0.0}]},
-                        {
-                            "token": "negative",
-                            "top_logprobs": [
-                                {"token": "negative", "logprob": math.log(0.7)},
-                                {"token": "positive", "logprob": math.log(0.3)},
-                            ],
-                        },
-                    ]
-                },
-            }
-        ]
-    }
-    predicted, dist = extract_decision(body, task)
-    assert predicted == "negative"
-    assert dist["negative"] == pytest.approx(0.7)
+def test_a_score_distribution_is_keyed_by_rung_index_not_rung_text():
+    rubric = Task(name="t", kind="score", question="q",
+                  labels=("low", "medium", "high"),
+                  examples=(Example(id="1", text="x", label="low"),))
+    predicted, dist = extract_decision(
+        _body({"type": "score", "score": 0.18, "confidence": 0.73,
+               "legend": {"0": "low", "1": "medium", "2": "high"},
+               "probabilities": {"0": 0.82, "1": 0.18, "2": 0.0}}), rubric)
+    assert predicted == "low"
+    assert dist == pytest.approx({"low": 0.82, "medium": 0.18, "high": 0.0})
 
 
-def test_structural_tokens_are_skipped_when_reading_logprobs(task):
-    body = {
-        "choices": [
-            {
-                "logprobs": {
-                    "content": [
-                        # '"answer"' is a prefix of nothing in the label set and
-                        # must not be mistaken for a decision.
-                        {"token": '"answer"', "top_logprobs": [{"token": '"answer"', "logprob": 0.0}]},
-                        {
-                            "token": "pos",
-                            "top_logprobs": [
-                                {"token": "pos", "logprob": math.log(0.6)},
-                                {"token": "neg", "logprob": math.log(0.4)},
-                            ],
-                        },
-                    ]
-                }
-            }
-        ]
-    }
-    predicted, dist = extract_decision(body, task)
-    assert predicted == "positive"
-    assert dist["positive"] == pytest.approx(0.6)
+def test_a_score_index_outside_the_rubric_is_an_error():
+    rubric = Task(name="t", kind="score", question="q", labels=("low", "high"),
+                  examples=(Example(id="1", text="x", label="low"),))
+    with pytest.raises(ExtractionError, match="outside"):
+        extract_decision(_body({"type": "score", "probabilities": {"0": 0.5, "7": 0.5}}), rubric)
 
 
-def test_distribution_is_read_from_json_in_the_content(task):
-    body = {
-        "choices": [
-            {"message": {"content": '{"answer":"positive","probabilities":{"positive":0.9,"negative":0.1}}'}}
-        ]
-    }
-    predicted, dist = extract_decision(body, task)
-    assert predicted == "positive"
-    assert dist["positive"] == pytest.approx(0.9)
+def test_a_noul_scalar_is_widened_to_a_two_sided_distribution():
+    """TypeSafe's own API names it 'noul'; the gateway names it 'probability'."""
+    gate = Task(name="t", kind="noul", question="q", labels=("true", "false"),
+                examples=(Example(id="1", text="x", label="true"),))
+    for key in ("noul", "probability"):
+        predicted, dist = extract_decision(_body({"type": "noul", key: 0.97}), gate)
+        assert predicted == "true"
+        assert dist == pytest.approx({"true": 0.97, "false": 0.03})
 
 
-def test_a_response_with_no_distribution_fails_loudly(task):
-    body = {"choices": [{"message": {"content": '{"answer":"positive"}'}}]}
-    with pytest.raises(ExtractionError, match="probe"):
+def test_a_noul_below_a_half_predicts_false():
+    gate = Task(name="t", kind="noul", question="q", labels=("true", "false"),
+                examples=(Example(id="1", text="x", label="true"),))
+    predicted, dist = extract_decision(_body({"type": "noul", "noul": 0.02}), gate)
+    assert predicted == "false"
+    assert dist["false"] == pytest.approx(0.98)
+
+
+def test_a_chat_completions_body_fails_loudly(task):
+    """The shape this client used to send. It must never parse as a decision."""
+    body = {"choices": [{"message": {"content": '{"answer":"positive"}'},
+                         "logprobs": {"content": []}}]}
+    with pytest.raises(ExtractionError, match="answers"):
         extract_decision(body, task)
 
 
-def test_pinning_a_source_does_not_silently_fall_through(task):
-    body = {"probabilities": {"positive": 0.8, "negative": 0.2}}
+def test_a_response_with_no_distribution_fails_loudly(task):
     with pytest.raises(ExtractionError):
-        extract_decision(body, task, source="logprobs")
+        extract_decision(_body({"type": "choice", "choice": "positive"}), task)
+
+
+def test_a_distribution_that_disagrees_with_the_stated_choice_is_an_error(task):
+    """A mismatch means we are misreading the response, not that Jev is wrong."""
+    with pytest.raises(ExtractionError, match="peaks at"):
+        extract_decision(
+            _body({"type": "choice", "choice": "negative",
+                   "probabilities": {"positive": 0.82, "negative": 0.18}}), task)
 
 
 def test_a_distribution_is_restricted_to_the_task_labels_and_renormalised(task):
-    body = {"probabilities": {"positive": 0.6, "negative": 0.2, "maybe": 0.2}}
-    _, dist = extract_decision(body, task)
-    assert set(dist) == {"positive", "negative"}
+    _, dist = extract_decision(
+        _body({"type": "choice", "choice": "positive",
+               "probabilities": {"positive": 0.6, "negative": 0.2, "unrelated": 0.2}}), task)
     assert sum(dist.values()) == pytest.approx(1.0)
     assert dist["positive"] == pytest.approx(0.75)
 
 
 def test_a_distribution_with_no_mass_on_the_labels_is_an_error(task):
-    with pytest.raises(ValueError):
-        normalise_distribution({"maybe": 1.0}, task.labels)
+    with pytest.raises(ExtractionError):
+        extract_decision(
+            _body({"type": "choice", "probabilities": {"other": 1.0}}), task)
 
 
-def test_the_request_constrains_the_answer_to_the_label_set(task, monkeypatch):
+def test_pinning_a_source_does_not_silently_fall_through(task):
+    """A pinned source must not quietly read the other field instead."""
+    with pytest.raises(ExtractionError):
+        extract_decision(
+            _body({"type": "choice", "probabilities": {"positive": 0.8, "negative": 0.2}}),
+            task, source="probability")
+
+
+# ------------------------------------------------------------------- requests
+
+
+def test_the_request_sends_the_labels_as_criteria(task, monkeypatch):
     monkeypatch.setenv("AI_GATEWAY_API_KEY", "test-key")
     provider = build_provider("gateway")
     payload = provider.build_payload(task, task.examples[0])
-    schema = payload["response_format"]["json_schema"]["schema"]
-    assert schema["properties"]["answer"]["enum"] == list(task.labels)
-    # The state goes in the user turn; the typed question in the system turn.
-    assert payload["messages"][1]["content"] == "x"
-    assert "positive" in payload["messages"][0]["content"]
+    question = payload["questions"]["decision"]
+    assert payload["state"] == "x"
+    assert question["type"] == "choice"
+    assert set(question["criteria"]) == set(task.labels)
+
+
+def test_underscored_labels_are_sent_as_readable_descriptions(monkeypatch):
+    monkeypatch.setenv("AI_GATEWAY_API_KEY", "test-key")
+    t = Task(name="t", kind="choice", question="q",
+             labels=("accept_reservations", "card_declined"),
+             examples=(Example(id="1", text="x", label="accept_reservations"),))
+    provider = build_provider("gateway")
+    criteria = provider.build_payload(t, t.examples[0])["questions"]["decision"]["criteria"]
+    assert criteria["accept_reservations"] == "accept reservations"
+
+
+def test_a_spec_supplied_description_wins_over_the_label(monkeypatch):
+    monkeypatch.setenv("AI_GATEWAY_API_KEY", "test-key")
+    t = Task(name="t", kind="choice", question="q", labels=("a", "b"),
+             examples=(Example(id="1", text="x", label="a"),),
+             criteria={"a": "the first one"})
+    provider = build_provider("gateway")
+    criteria = provider.build_payload(t, t.examples[0])["questions"]["decision"]["criteria"]
+    assert criteria == {"a": "the first one", "b": "b"}
+
+
+def test_each_surface_uses_its_own_endpoint_and_yes_no_type_name(monkeypatch):
+    monkeypatch.setenv("AI_GATEWAY_API_KEY", "test-key")
+    monkeypatch.delenv("JEV_BASE_URL", raising=False)
+    gateway = build_provider("gateway", surface="gateway")
+    native = build_provider("gateway", surface="typesafe")
+    assert gateway.base_url.endswith("ai-gateway.vercel.sh/v1")
+    assert gateway.question_type("noul") == "boolean"
+    assert native.base_url.endswith("api.typesafe.ai/v1")
+    assert native.question_type("noul") == "noul"
+
+
+def test_the_gateways_exact_cost_is_preferred_over_our_arithmetic(task):
+    from jevcal.providers.gateway import _cost_usd
+
+    body = _body({"type": "choice"}, providerMetadata={"gateway": {"cost": "0.00001155"}})
+    assert _cost_usd(body) == pytest.approx(0.00001155)
+
+
+def test_cost_falls_back_to_token_arithmetic_when_unreported(task):
+    from jevcal.providers.gateway import _cost_usd
+
+    assert _cost_usd(_body({"type": "choice"})) == pytest.approx(359 * 0.042 / 1e6)
+    assert _cost_usd({"usage": {"inputTokens": 359}}) == pytest.approx(359 * 0.042 / 1e6)

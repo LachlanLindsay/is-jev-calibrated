@@ -9,3 +9,5 @@ runs/
 out/
 report/
 *.png.bak
+data/
+tasks/*.jsonl
