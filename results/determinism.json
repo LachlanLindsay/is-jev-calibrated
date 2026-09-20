@@ -1,0 +1,127 @@
+{
+  "repeats": 3,
+  "n": 20,
+  "identical": 10,
+  "rows": [
+    {
+      "id": "train-0",
+      "text": "what expression would i use to say i love you if i were an italian",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-1",
+      "text": "can you tell me how to say 'i do not speak much spanish', in spanish",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-2",
+      "text": "what is the equivalent of, 'life is good' in french",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-3",
+      "text": "tell me how to say, 'it is a beautiful morning' in italian",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-4",
+      "text": "if i were mongolian, how would i say that i am a tourist",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-5",
+      "text": "how do i say 'hotel' in finnish",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-6",
+      "text": "i need you to translate the sentence, 'we will be there soon' into portuguese",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-8",
+      "text": "can you tell me how i would say, 'more bread please' in french",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-9",
+      "text": "what is the correct way to say 'i am a visitor' in french",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-10",
+      "text": "how would i say, 'i don't know the answer' in spanish",
+      "identical": true,
+      "distinct_signatures": 1
+    },
+    {
+      "id": "train-35",
+      "text": "how do vietnameses people say hello",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-42",
+      "text": "what phrase means goodbye in hawaii",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-47",
+      "text": "how do they say goodbye in hawaii",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-48",
+      "text": "what's local slang for goodbye in hawaii",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-55",
+      "text": "how would they say say goodbye in hawaii",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-169",
+      "text": "please switch $s checking to mortage",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-249",
+      "text": "i need you to set a time",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-260",
+      "text": "alert me in 20 minutes",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-527",
+      "text": "i need new health care coverage",
+      "identical": false,
+      "distinct_signatures": 3
+    },
+    {
+      "id": "train-551",
+      "text": "i need to get a new motorcycle insurance plan",
+      "identical": false,
+      "distinct_signatures": 3
+    }
+  ]
+}
