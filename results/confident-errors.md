@@ -108,3 +108,44 @@ harder, not to publish.
 
 The check that settles it costs one query: **look at what the other class is used
 for.** It is worth running before attributing any error to annotation noise.
+
+## Postscript: what survives full specification
+
+Everything above concerns E1, where classes were described only by their names.
+The clean description run (E1c — all 150 classes described by the error-blind
+exemplar rule, 7,500 held-out rows) leaves 14 errors at a reported probability
+of 1.000. Applying the same discipline as above — check what the dataset uses
+the *other* label for before judging — they break down as:
+
+**Five clear gold-label errors, where the model is right:**
+
+| utterance | gold | Jev said | why the gold is wrong |
+| --- | --- | --- | --- |
+| "allow me to turn on the lights" | `restaurant_reservation` | `smart_home` | indefensible on its face |
+| "what is on my to do list" | `reminder` | `todo_list` | `todo_list` rows are literally *"what does my to-do list look like"* |
+| "what is my current location" | `share_location` | `current_location` | every `share_location` row names a person to tell; none here |
+| "can you call the help desk line for my credit card company" | `replacement_card_duration` | `make_call` | that intent's rows are all "how long until my replacement arrives" |
+| "how can i request a new credit card" | `replacement_card_duration` | `new_card` | asks how to request, not how long |
+
+**Two rows of the known `ingredients_list`/`recipe` noise pair**, and roughly
+six genuine ambiguities where both labels are defensible ("great talk, thanks"
+as `goodbye` vs `thank_you`; "someone used my chase card without my
+authorization" as `report_lost_card` vs `report_fraud`; "what time is it in
+phoenix" as `timezone` vs `time`). Perhaps one or two are outright model
+mistakes.
+
+Two conclusions. First, with classes properly specified, the model's residual
+error rate at certainty (0.26%) is pressed against the dataset's own annotation
+noise floor — most of what remains is CLINC150's fault or nobody's. Second, the
+errors that do remain migrate to where a gate would catch them: on the same
+7,500 rows, errors at `1.000` fall from 72 (13% of all errors) to 14 (6%), and
+the median confidence on an error drops from 0.76 to 0.69. The model
+increasingly fails where it says it is unsure, which is the property a
+confidence gate actually needs.
+
+Note the contrast with the main finding of this document, and why the same
+method gives opposite verdicts: E1's certainty errors checked out as the
+model's fault (372 of 395 gold labels correct); E1c's check out mostly as the
+dataset's. The difference is not the method but the model's remaining error
+mass — specification fixed the systematic failures, and what is left is the
+noise floor.
