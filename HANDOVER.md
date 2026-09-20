@@ -1,5 +1,13 @@
 # Handover: run the real audit
 
+> **Status: done.** The run this brief asked for happened on 2026-09-19 —
+> 51,000 decisions against `jev-1.13.0`, findings in [REPORT.md](REPORT.md).
+> Step 1's warning proved out: the API surface assumed below was wrong
+> ([docs/api-notes.md](docs/api-notes.md) is the verification trail), and the
+> cost estimate was 8× low. This file is kept unedited below as the record of
+> the brief.
+
+
 **Status: this repo contains no measurements of Jev.** The harness is complete
 and its 78 tests pass, but it has never been pointed at the model. It was built
 in a cloud container whose egress was restricted to package registries —
