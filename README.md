@@ -21,14 +21,19 @@ above which it is safe to stop looking.**
 
 ## The results
 
-We ran it: 51,000 decisions against `jev-1.13.0` on CLINC150, zero failed
-requests, $5.16. **[REPORT.md](REPORT.md)** is the write-up, written for
-engineers with no stats background. In one paragraph: in aggregate Jev is well
-calibrated (92.6% accuracy against a 0.67% baseline, ECE 0.021) — but it claims
-probability `1.000` on 62% of decisions and is wrong 219 of those times; adding
-one sentence of description per class cut errors on affected rows by 63%; and
-the same out-of-scope question is five times more detectable through a Choice
-rejection option than through the boolean primitive, on identical rows.
+We ran it: 60,900 decisions against `jev-1.13.0` on CLINC150, zero failed
+requests, about $8. **[REPORT.md](REPORT.md)** is the write-up, written for
+engineers with no stats background. The one-line version: **Jev is about as
+calibrated as the question you send it.** With bare class names it is good but
+overconfident (92.6% accuracy, ECE 0.021, and a wrong answer at probability
+`1.000` two hundred times); with every class described by a mechanical
+three-example rule it reaches 97.1% accuracy at **ECE 0.0046 with no systematic
+lean**, on held-out rows. The boolean scope gate that looked broken (no usable
+threshold at any budget) matched the 151-way Choice detector once its
+instructions enumerated the scope — the failure was the specification, never
+the primitive. What specification can't fix: probabilities quantised to 0.01,
+a residual 0.26% error rate on certainty claims, ~4× worse calibration on
+out-of-scope input, and non-determinism on contested rows.
 
 Supporting material: [`results/`](results/) (charts, per-experiment reports,
 every decision as [one CSV](results/decisions.csv)),
@@ -173,24 +178,19 @@ than removing it*: the escalated tail still needs somewhere to go, with its own
 cost and error rate. Latency figures are end-to-end including network, and no
 vendor figures are reproduced here.
 
-**The clean description experiment** (highest value). Experiment 1b described
-16 classes chosen after seeing the errors, so its result is an upper bound.
-Describe all 150 by a rule fixed in advance — e.g. generated from each class's
-training rows by a uniform procedure — and rerun E1 in full. ~$2.40.
-
-**Isolate primitive from specification.** E3's boolean under-performed E2's
-Choice, but it also received a one-sentence scope description where E2 got 150
-named options. Rerun the noul with a rich scope specification to separate the
-two explanations.
-
-**Determinism.** Repeat identical requests and measure response variance —
-designed, but blocked when API credits ran out. If responses vary, single-shot
-calibration measures average behaviour; worth establishing which.
-
 **The Score primitive is unaudited.** The harness supports Jev's ordered-rubric
 questions end-to-end (`--kind score`), but no experiment has exercised them
 against the live model. An ordinal task (rating, severity, urgency) would
 complete the coverage of Jev's three primitives.
+
+**Why does full specification overshoot?** Well-specified runs flip from
+overconfident to slightly *under*-confident (E1c bias −0.2%, E3b slope 1.23).
+Characterising where the crossover sits would make the specification advice
+quantitative.
+
+**Description style.** Three verbatim exemplars worked; would one hand-written
+sentence, or ten exemplars, work better or worse? A style sweep is cheap and
+directly actionable.
 
 **Option-order sensitivity.** `criteria` is an ordered map and we always sent
 alphabetical order. Shuffle it and measure whether the distribution moves.

@@ -130,6 +130,11 @@ class GatewayProvider:
     def question_type(self, kind: str) -> str:
         return self._noul_type if kind == "noul" else kind
 
+    @property
+    def endpoint(self) -> str:
+        """The URL this provider posts to."""
+        return f"{self.base_url}/{self._path}"
+
     # ---------------------------------------------------------------- request
 
     def build_question(self, task: Task) -> dict[str, Any]:
@@ -157,7 +162,7 @@ class GatewayProvider:
 
     def raw_call(self, task: Task, example: Example) -> dict[str, Any]:
         """One HTTP round trip, with retries on transient failures."""
-        url = f"{self.base_url}/{self._path}"
+        url = self.endpoint
         headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
         payload = self.build_payload(task, example)
 

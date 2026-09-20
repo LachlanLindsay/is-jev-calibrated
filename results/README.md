@@ -8,10 +8,14 @@ directory holds the artifacts behind it:
 | [`decisions.csv`](decisions.csv) | every decision from E1–E3 as one spreadsheet: utterance, gold, prediction, confidence, the model's top-3 options, and before/after columns for the description experiment |
 | [`clinc150-inscope/`](clinc150-inscope/) | E1, 150-way classification: full report, charts, `results.json`, held-out gates |
 | [`clinc150-oos/`](clinc150-oos/) | E2, 151-way with the `oos` rejection option |
-| [`clinc150-gate/`](clinc150-gate/) | E3, the boolean scope gate |
+| [`clinc150-gate/`](clinc150-gate/) | E3, the boolean scope gate, one-sentence scope |
+| [`clinc150-gate-rich/`](clinc150-gate-rich/) | E3b, the same gate with the scope enumerated |
+| [`clinc150-described-full/`](clinc150-described-full/) | E1c, all 150 classes described by the error-blind rule |
 | [`confident-errors.md`](confident-errors.md) | what the model gets wrong while claiming certainty, and whether the dataset is to blame |
 | [`confident-errors.json`](confident-errors.json) | the same, machine-readable |
-| [`rejector-comparison.json`](rejector-comparison.json) | E2-vs-E3 head-to-head on identical rows |
+| [`rejector-comparison.json`](rejector-comparison.json) | out-of-scope detectors head-to-head on identical rows |
+| [`description-effect.json`](description-effect.json) | bare names vs described classes, targeted and clean |
+| [`determinism.json`](determinism.json) | same request repeated: stable when confident, not when torn |
 
 Everything regenerates from the committed task specs: see
 [Reproducing the Jev audit](../README.md#reproducing-the-jev-audit). The raw

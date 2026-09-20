@@ -233,7 +233,7 @@ def cmd_probe(args: argparse.Namespace) -> int:
     body = provider.raw_call(task, example)
     print("--- response ---")
     print(json.dumps(body, indent=2))
-    print(f"--- endpoint: {provider.base_url}/{provider._path} ---")
+    print(f"--- endpoint: {provider.endpoint} ---")
     print("--- extraction ---")
     for source in ("probabilities", "probability"):
         try:

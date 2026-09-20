@@ -167,11 +167,7 @@ def run_task(
 
 def _endpoint_of(provider: Any) -> str:
     """The URL a provider posts to, when it posts to one at all."""
-    base = getattr(provider, "base_url", "")
-    if not base:
-        return ""
-    path = getattr(provider, "_path", "")
-    return f"{base}/{path}" if path else base
+    return str(getattr(provider, "endpoint", ""))
 
 
 def _print_progress(done: int, total: int, failed: int, started: float, final: bool = False) -> None:

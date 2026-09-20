@@ -1,0 +1,42 @@
+{
+  "targeted (16 classes, post-hoc: upper bound)": {
+    "bare": {
+      "n": 2400,
+      "accuracy": 0.7525,
+      "errors": 594,
+      "overconfidence": 0.14928876262626267,
+      "ece": 0.1700779040404041,
+      "n_at_1": 961,
+      "errors_at_1": 167
+    },
+    "described": {
+      "n": 2400,
+      "accuracy": 0.9095833333333333,
+      "errors": 217,
+      "overconfidence": 0.014606271043771102,
+      "ece": 0.020676557239057248,
+      "n_at_1": 1228,
+      "errors_at_1": 7
+    }
+  },
+  "clean (all 150, error-blind rule, val+test)": {
+    "bare": {
+      "n": 7500,
+      "accuracy": 0.9269333333333334,
+      "errors": 548,
+      "overconfidence": 0.018053010101010014,
+      "ece": 0.021090693602693576,
+      "n_at_1": 4620,
+      "errors_at_1": 72
+    },
+    "described": {
+      "n": 7500,
+      "accuracy": 0.9710666666666666,
+      "errors": 217,
+      "overconfidence": -0.001785831649831593,
+      "ece": 0.004572121212121235,
+      "n_at_1": 5375,
+      "errors_at_1": 14
+    }
+  }
+}

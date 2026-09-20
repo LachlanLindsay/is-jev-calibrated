@@ -28,6 +28,8 @@ RUNS = [
     ("E1-inscope", "tasks/clinc150-inscope.json", "runs/clinc150-inscope.jsonl"),
     ("E2-oos", "tasks/clinc150-oos.json", "runs/clinc150-oos.jsonl"),
     ("E3-gate", "tasks/clinc150-gate.json", "runs/clinc150-gate.jsonl"),
+    ("E1c-described-full", "tasks/clinc150-described-full.json", "runs/clinc150-described-full.jsonl"),
+    ("E3b-gate-rich", "tasks/clinc150-gate-rich.json", "runs/clinc150-gate-rich.jsonl"),
 ]
 DESCRIBED = ("tasks/clinc150-described.json", "runs/clinc150-described.jsonl")
 

@@ -31,10 +31,14 @@ from jevcal.runner import align, read_predictions
 from jevcal.types import load_task
 
 
-def scores() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    gate_task = load_task("tasks/clinc150-gate.json")
-    gex, gpr = align(gate_task, list(read_predictions("runs/clinc150-gate.jsonl")))
-    gate = {e.id: (e.label, p.distribution["false"]) for e, p in zip(gex, gpr)}
+def _pfalse(task_path: str, run_path: str) -> dict[str, tuple[str, float]]:
+    task = load_task(task_path)
+    ex, pr = align(task, list(read_predictions(run_path)))
+    return {e.id: (e.label, p.distribution["false"]) for e, p in zip(ex, pr)}
+
+
+def scores() -> tuple[np.ndarray, list[tuple[str, np.ndarray]]]:
+    gate = _pfalse("tasks/clinc150-gate.json", "runs/clinc150-gate.jsonl")
 
     oos_task = load_task("tasks/clinc150-oos.json")
     oex, opr = align(oos_task, list(read_predictions("runs/clinc150-oos.jsonl")))
@@ -42,7 +46,16 @@ def scores() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
 
     ids = [i for i in gate if i in e2]
     truth = np.array([gate[i][0] == "false" for i in ids])
-    return truth, np.array([gate[i][1] for i in ids]), np.array([e2[i] for i in ids])
+    detectors = [
+        ("E3 noul P(false), one-sentence scope", np.array([gate[i][1] for i in ids])),
+        ("E2 choice P(oos)", np.array([e2[i] for i in ids])),
+    ]
+    rich_path = Path("runs/clinc150-gate-rich.jsonl")
+    if rich_path.exists():
+        rich = _pfalse("tasks/clinc150-gate-rich.json", str(rich_path))
+        detectors.insert(1, ("E3b noul P(false), scope enumerated",
+                             np.array([rich[i][1] for i in ids])))
+    return truth, detectors
 
 
 def at_false_alarm(score: np.ndarray, truth: np.ndarray, budget: float) -> tuple[float, float, float]:
@@ -56,11 +69,11 @@ def main() -> int:
     ap.add_argument("--json", dest="as_json", default="results/rejector-comparison.json")
     args = ap.parse_args()
 
-    truth, noul, poos = scores()
+    truth, detectors = scores()
     n = truth.size
     print(f"{n:,} identical rows, {int(truth.sum()):,} out-of-scope\n")
     rows = []
-    for name, score in (("E3 noul P(false)", noul), ("E2 choice P(oos)", poos)):
+    for name, score in detectors:
         a = auroc(score.tolist(), truth.tolist())
         entry = {"detector": name, "auroc": a, "operating_points": []}
         print(f"{name}:  AUROC {a:.4f}")

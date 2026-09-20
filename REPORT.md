@@ -10,26 +10,30 @@ see the [README](README.md).*
 | **Model** | `jev-1.13.0` (what `jev-latest` resolved to on every one of 51,000 calls) |
 | **Endpoint** | `api.typesafe.ai/v1/systemone`, 2026-09-19 |
 | **Dataset** | [CLINC150](https://github.com/clinc/oos-eval) — Larson et al., EMNLP 2019, CC BY-SA 3.0 |
-| **Decisions** | 51,000 across four experiments, 0 failed requests |
-| **Cost / speed** | $5.16 total (~$0.10 per 1,000 decisions), 160 ms median end-to-end |
+| **Decisions** | 60,900 across six experiments, 0 failed requests |
+| **Cost / speed** | ~$8 total including probes (~$0.13 per 1,000 decisions), 160 ms median end-to-end |
 | **Data** | every decision in [`results/decisions.csv`](results/decisions.csv); charts regenerate from committed task specs |
 
 ## Findings at a glance
 
 Jev's pitch is that every decision arrives with a probability you can trust —
 the reason you'd put a small fast model in front of a frontier model at all. As
-far as we can tell, nobody had published a reliability diagram for it. Four
-findings, each with its section below:
+far as we can tell, nobody had published a reliability diagram for it. The
+audit's findings converge on one thesis:
+
+> **Jev is about as calibrated as the question you send it. Under-specified
+> questions come back overconfident; well-specified ones come back honest.**
 
 | # | finding | where |
 | --- | --- | --- |
-| 1 | **In aggregate it is well calibrated**: 92.6% accuracy on a 150-way task (baseline 0.67%), claimed confidence within ~2 points of delivered accuracy, and confidence that ranks its own errors well | [E1](#experiment-1--150-way-classification) |
-| 2 | **It claims certainty it doesn't have**: probability `1.000` on 62% of decisions, wrong 219 of those times | [E1](#the-1000-problem) |
-| 3 | **Class descriptions are the biggest lever in the API**: one sentence per class cut errors 63% and miscalibration eightfold on the affected rows | [E1b](#experiment-1b--how-much-do-class-descriptions-matter) |
-| 4 | **The same scope question is ~5× better asked as a Choice than as a yes/no**: at a 1% false-alarm budget, 70.4% vs 14.0% of out-of-scope traffic caught, on identical rows | [E2](#experiment-2--out-of-scope-detection-with-an-escape-hatch), [E3](#experiment-3--the-same-question-as-a-yesno), [head-to-head](#head-to-head-one-question-two-primitives) |
+| 1 | Asked with bare class names, it is **well calibrated in aggregate** — 92.6% accuracy on a 150-way task (baseline 0.67%), ECE 0.021 — but **overconfident**, reporting probability `1.000` on 62% of decisions and getting 219 of those wrong | [E1](#experiment-1--150-way-classification) |
+| 2 | **Describing every class by a mechanical, error-blind rule** lifts the same task to 97.1% accuracy, **ECE 0.0046, bias −0.2%** — no systematic lean, on held-out rows. Specification quality is the biggest lever anywhere in this audit | [E1c](#experiment-1b--how-much-do-class-descriptions-matter) |
+| 3 | The boolean scope gate is **unusable when the scope is one prose sentence** (no threshold meets even a 10% error budget) and **matches the 151-way Choice when the scope is enumerated** — AUROC 0.970 vs 0.972 as an out-of-scope detector, on identical rows. The primitive was never the problem | [E3](#experiment-3--the-same-question-as-a-yesno), [head-to-head](#head-to-head-one-question-three-specifications) |
+| 4 | What specification cannot fix: probabilities are **quantised to 0.01** and `1.000` still overclaims (wrong 14 times even in the clean run); calibration **degrades ~4× on out-of-distribution input**; and contested decisions are **stochastic** — repeat the same request and the argmax can flip | [E2](#experiment-2--out-of-scope-detection-with-an-escape-hatch), [checks](#checks-a-sceptical-reader-would-ask-for) |
 
-If you take one thing away: **write a real description for every class, and
-detect out-of-scope with a Choice rejection option, not a boolean.**
+If you take one thing away: **describe every option and enumerate the scope —
+the model can only be as honest as the question — and even then, treat `1.000`
+as "very likely", never as a guarantee.**
 
 ---
 
@@ -214,56 +218,75 @@ covering 62% of traffic.
 
 ## Experiment 1b — how much do class descriptions matter?
 
-**The largest effect in this report, with the clearest action attached.**
+**The largest effect in this report, established in two stages: an exploratory
+pass that found it, and a clean pass that pins it down.**
 
-**Setup.** E1 described each class by its own name — a realistic wiring, since
-class names are what you have. But names are all the model gets, and CLINC150's
-taxonomy hangs real distinctions on small differences: `reminder` means *read my
+E1 described each class by its own name — a realistic wiring, since class names
+are what you have. But names are all the model gets, and CLINC150's taxonomy
+hangs real distinctions on small differences: `reminder` means *read my
 reminders back*, `reminder_update` means *create one*. TypeSafe's docs warn
 about exactly this ("*write descriptions that separate the options from each
 other*"), so the cost of ignoring them is worth measuring.
 
+### Stage one, targeted (exploratory)
+
 2,400 rows re-run — every row whose gold class was one of the 16 involved in
-the dominant confusions — with one written sentence per class. **Same model,
-same 150 options, same question, same rows.** The only change:
-
-```json
-"reminder":        "reminder"                → "Read back or list reminders that already exist."
-"reminder_update": "reminder update"        → "Create a new reminder, or modify an existing one."
-```
-
-**Results.**
+E1's dominant confusions — with one hand-written sentence per class. Same
+model, same 150 options, same question, same rows:
 
 | on those 2,400 rows | bare names | described |
 | --- | --- | --- |
 | accuracy | 75.25% | **90.96%** |
-| errors | 594 | **217** |
 | overconfidence | +14.93% | **+1.46%** |
 | ECE | 0.1701 | **0.0207** |
 | errors at `1.000` | 167 | **7** |
 
-The dominant confusions don't shrink — they nearly vanish: `reminder_update →
-reminder` 149 → 9; `improve_credit_score → credit_score` 44 → 1;
-`last_maintenance → oil_change_when` 39 → 0. Projected over the full run,
-describing 11% of the classes would cut overall ECE by ~59% (0.0209 → 0.0085)
-and errors-at-certainty from 219 to 59.
+`reminder_update → reminder` fell from 149 errors to 9; `last_maintenance →
+oil_change_when` from 39 to 0. But those 16 classes were chosen *by looking at
+which ones failed*, and the sentences were written knowing the answer — so this
+stage is an upper bound on nothing-in-particular. It motivates the clean pass;
+it should not be quoted.
+
+### Stage two, clean (the quotable version)
+
+All **150** classes described by one mechanical rule, fixed in advance and
+applied uniformly with no per-class judgement: each class's first three
+*training* utterances, in file order, verbatim —
+
+```json
+"translate": "e.g. \"what expression would i use to say i love you if i were an
+             italian\" / \"can you tell me how to say 'i do not speak much
+             spanish', in spanish\" / \"what is the equivalent of, 'life is
+             good' in french\""
+```
+
+— and scored on **val+test only** (7,500 rows), so the exemplar source and the
+evaluated rows are disjoint. Baseline: the bare-name E1 run on exactly the same
+rows. (Reproduce: [`scripts/description_effect.py`](scripts/description_effect.py).)
+
+![Reliability diagram with all classes described](results/clinc150-described-full/reliability.png)
+
+| on 7,500 held-out rows | bare names | all classes described |
+| --- | --- | --- |
+| accuracy | 92.69% | **97.11%** |
+| errors | 548 | **217** |
+| overconfidence | +1.81% | **−0.18%** |
+| ECE | 0.0211 | **0.0046** (95% CI 0.004–0.009) |
+| AUROC | 0.855 | **0.924** |
+| errors at `1.000` | 72 | 14 |
 
 **Reading.**
 
-- The E1 headline substantially measures the *request*, not the model's
-  ceiling. Jev can represent these distinctions; it was never told they existed.
-- **Class names are not specifications.** `reminder_update` reads as
-  self-documenting only because you have the taxonomy in your head; the model
-  has eleven characters.
-- Treat compound class names (`X` and `X_update`, `foo` and `change_foo`) as a
-  lint warning in any Jev integration. The fix is one sentence per class.
-
-**Caveat, and it matters:** the 16 classes were chosen *by looking at which ones
-failed*, so these numbers are an upper bound on the benefit, not a headline.
-The clean version — all 150 classes described by a rule fixed before seeing any
-errors — is the first item of [future work](README.md#scope-and-suggested-improvements).
-
----
+- With classes actually specified, Jev on this task is **about as calibrated as
+  the instrument can measure** — a 0.5% average gap with no systematic lean, at
+  97% accuracy. The E1 headline measured the request, not the model's ceiling.
+- The bias *changes sign*: bare names produce overconfidence (+1.8%); described
+  classes produce a model that is fractionally under-confident (−0.2%). It
+  claims `1.000` *more often* with descriptions (71.7% of rows vs 61.6%) and
+  earns it far more often (14 wrong vs 72).
+- **Class names are not specifications.** Three verbatim example utterances per
+  class — no craft, no tuning — is enough. If your class taxonomy contains
+  compound names (`X` and `X_update`), treat bare-name criteria as a bug.
 
 ## Experiment 2 — out-of-scope detection, with an escape hatch
 
@@ -296,62 +319,67 @@ destinations).
 ## Experiment 3 — the same question as a yes/no
 
 **Setup.** Jev's boolean primitive ("noul"), asked directly: *"Is this user
-utterance something the assistant can handle?"* — with the scope described in
-one prose sentence, since a boolean takes no option list. 2,400 rows, balanced
-50/50 (all 1,200 out-of-scope + 1,200 seeded-sampled in-scope), so the baseline
-is 50%.
+utterance something the assistant can handle?"* A boolean takes no option list,
+so the scope has to live in the instructions — and this experiment ran twice,
+differing only there:
+
+- **E3, one-sentence scope:** "…a fixed set of 150 everyday personal-assistant
+  intents: banking, travel, vehicles, small talk, utilities, work and home
+  automation."
+- **E3b, enumerated scope:** the same instruction, but listing all 150 intent
+  names ("accept reservations, account blocked, alarm, …").
+
+2,400 rows, balanced 50/50 (all 1,200 out-of-scope + 1,200 seeded in-scope), so
+the baseline is 50%.
 
 **Results.**
 
 ![Reliability diagram for the boolean scope gate](results/clinc150-gate/reliability.png)
 
-| metric | value |
-| --- | --- |
-| accuracy | **71.92%** (baseline 50%) |
-| ECE | 0.0468 (95% CI 0.0369–0.0659) |
-| MCE | 0.1417 |
-| AUROC | **0.663** |
-
-| confidence | n | accuracy |
+| identical 2,400 rows | one-sentence scope | scope enumerated |
 | --- | --- | --- |
-| 0.7–0.8 | 353 | 65.4% |
-| 0.8–0.9 | 616 | 75.2% |
-| 0.9–1.0 | 694 | 84.4% |
-| **1.00** | 114 | **83.3%** |
+| accuracy | 71.92% | **90.50%** |
+| ECE | 0.0468 | 0.0259 |
+| overconfidence | +4.68% | **−2.5%** (now *under*-confident) |
+| AUROC (confidence vs correctness) | 0.663 | 0.831 |
+| error budgets with a workable gate | none of 1/2/5/10% | **all of 1/2/5/10%** |
 
-**Reading.** Accuracy climbs with confidence — then flattens and turns over at
-the top. In bucket terms, the 0.93–1.00 band claims 94.8% and delivers 80.6%,
-*worse than the band below it*. **No threshold meets an error budget of 1%, 2%,
-5% or 10%**; there is no gate to set.
+With the one-sentence scope, confidence stops being informative exactly where a
+gate would sit: the 0.93–1.00 band claims 94.8% and delivers 80.6%, *worse than
+the band below it*, and no threshold meets any tested budget. With the scope
+enumerated, the same primitive on the same rows becomes a working instrument.
 
----
+**Reading.** The boolean primitive was never broken — it was under-informed.
+"150 everyday personal-assistant intents" reads like a specification to a human
+who can imagine the list; the model demonstrably could not. Note the now-familiar
+sign flip: the under-specified question is overconfident, the well-specified one
+slightly timid (the logistic refit slope goes from 0.70 to 1.23 — past honest,
+into hedging).
 
-## Head-to-head: one question, two primitives
+## Head-to-head: one question, three specifications
 
-E2 and E3 headline numbers aren't directly comparable (different metrics,
-different row mixes), so here is the tight version. Both experiments scored the
-**same 2,400 utterances**, and each yields one number per row for "this is out
-of scope": E2's `P(oos)` from the Choice distribution, E3's `P(false)` from the
-noul. Same model, same rows, same decision — only the primitive differs.
-(Reproduce: [`scripts/rejector_comparison.py`](scripts/rejector_comparison.py).)
+All three framings scored the **same 2,400 utterances**, and each yields one
+probability per row for "this is out of scope": E2's `P(oos)` from the 151-way
+Choice, and `P(false)` from each noul variant. Same model, same rows, same
+decision. (Reproduce: [`scripts/rejector_comparison.py`](scripts/rejector_comparison.py).)
 
-| out-of-scope detector | AUROC | caught @1% false alarms | @5% | @10% |
+| out-of-scope detector | AUROC | caught @1% FA | @5% | @10% |
 | --- | --- | --- | --- | --- |
-| E3 noul `P(false)` | 0.786 | 14.0% | 36.9% | 45.4% |
-| **E2 Choice `P(oos)`** | **0.972** | **70.4%** | **91.9%** | **95.0%** |
+| noul, one-sentence scope | 0.786 | 14.0% | 36.9% | 45.4% |
+| **noul, scope enumerated** | **0.970** | **67.5%** | **85.4%** | **93.3%** |
+| **Choice with `oos` option** | **0.972** | **70.4%** | **91.9%** | **95.0%** |
 
-At every operating point the Choice-derived probability dominates — **five times
-the detection rate at a 1% false-alarm budget**.
+Read bottom-up: the five-fold gap between the first and last rows looks like a
+story about primitives — until the middle row closes almost all of it by
+changing *only the words in the instructions*. What the Choice framing was
+really providing was the list of what "in scope" means. Give the boolean the
+same list and the two are within noise of each other.
 
-One caveat before reading this as "booleans are bad": the two framings also
-differ in how the scope was *specified*. E2 hands the model all 150 intents
-extensionally; E3 compresses them into one prose sentence. Given E1b, some of
-the gap may be specification rather than primitive. Isolating that (a noul with
-a much richer scope description) is listed as future work. The operational
-advice stands either way: **to detect out-of-scope, expose the option list and
-read `P(oos)`.**
-
----
+The residual edge for the Choice (70.4% vs 67.5% at 1% FA) is real but small,
+and the Choice also tells you *which* intent to route to. Practical upshot:
+**use whichever primitive fits your control flow, and spend your effort on the
+specification** — it moved these numbers by 4–5×; the primitive moved them by a
+few points.
 
 ## Checks a sceptical reader would ask for
 
@@ -391,30 +419,46 @@ class at 0.00 on most errors, which makes log-loss (NLL) a function of the clip
 constant rather than the model; NLL is therefore not quoted anywhere in this
 report.
 
-**Is the model deterministic?** Unknown — the probe (same request, repeated) was
-designed but blocked when API credits ran out; it is listed in future work. If
-responses vary across repeats, single-shot numbers here measure the *average*
-behaviour, which is the operationally relevant quantity for a gate but worth
-establishing explicitly.
+**Is the model deterministic?** Only when it's sure. Twenty utterances sent
+three times each ([`scripts/determinism_probe.py`](scripts/determinism_probe.py)):
+all ten high-confidence rows returned bit-identical distributions; all ten
+contested rows wobbled by a few hundredths, and on at least three the *argmax
+flipped* between repeats ("alert me in 20 minutes" went `reminder` 0.42 /
+`timer` 0.41 across runs). Single-shot numbers in this report therefore measure
+average behaviour — the operationally relevant quantity for a gate — and
+near-threshold routing decisions carry sampling noise of their own: a
+borderline row may be routed differently on retry.
 
 ---
 
 ## Recommendations for anyone building on Jev
 
-1. **Write a one-sentence description for every class.** Biggest measured
-   effect in this audit, a few tokens per option. Bare class names — especially
-   compounds that contain each other — are the failure mode.
-2. **Detect out-of-scope with a Choice rejection option, not a boolean.** Five
-   times the detection rate at the same false-alarm budget, on identical rows.
-3. **Never treat `1.000` as a guarantee.** It is the model's most common claim
-   and it carries a measurable error rate (1.6% here).
-4. **Gate on `max(probabilities)`, not the `confidence` field**, unless you have
-   verified what the entropy-based `confidence` does on *your* option count.
-5. **Choose thresholds on held-out data, and against the upper error bound.**
-   Our gates transferred (1.58% → 1.55%); a threshold tuned on the same sample
-   it is quoted on will flatter you.
-6. **Expect degraded calibration on out-of-distribution input** (4× here), and
-   budget your escalation path for it.
+1. **Specify every option, always.** The single biggest lever in this audit, by
+   far. Three verbatim example utterances per class — generated mechanically,
+   no craft — took the same task from ECE 0.021 and overconfident to ECE 0.0046
+   and unbiased. Bare class names are a measurable bug, especially compound
+   names that contain each other (`X` / `X_update`).
+2. **Enumerate the scope for yes/no questions.** A boolean whose instructions
+   say "requests of that general kind" gave us an ungateable instrument; the
+   same boolean with the 150 in-scope types listed matched the Choice detector
+   at every operating point. If the list fits in the request, send the list.
+3. **Pick the primitive by control flow, not by accuracy.** Once both were
+   properly specified, Choice-with-rejection and boolean were within a few
+   points of each other. The Choice additionally tells you where to route.
+4. **Never treat `1.000` as a guarantee.** It is the model's most common claim,
+   and it retains a measurable error rate even in the best-specified run (14
+   wrong of 5,375 certainty claims — 0.26%).
+5. **Gate on `max(probabilities)`, not the `confidence` field**, unless you
+   have verified what the entropy-based `confidence` does on *your* option
+   count.
+6. **Choose thresholds on held-out data, against the upper error bound.** Ours
+   transferred (1.58% → 1.55%); a threshold tuned on the sample it is quoted on
+   will flatter you.
+7. **Expect degraded calibration on out-of-distribution input** (4× here), and
+   budget the escalation path for it.
+8. **Retry borderline decisions knowingly.** Contested rows are stochastic; a
+   retry can flip the answer. Either pin decisions by idempotency key on your
+   side, or treat near-threshold flips as part of your error budget.
 
 ---
 
