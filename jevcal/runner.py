@@ -30,6 +30,11 @@ class RunMetadata:
     kind: str
     labels: list[str]
     provider: str
+    #: The URL the decisions were actually fetched from. ``provider`` alone is
+    #: ambiguous -- "gateway" is this repo's client class, which can speak either
+    #: the Vercel AI Gateway or TypeSafe's own API -- and "which endpoint served
+    #: this?" is a question a published number has to be able to answer.
+    endpoint: str
     model: str
     n_examples: int
     n_ok: int
@@ -136,6 +141,10 @@ def run_task(
     finished = time.time()
     rows = list(read_predictions(out_path))
     n_ok = sum(1 for p in rows if p.ok)
+    # Sum what is on disk, not what this invocation happened to fetch. Runs are
+    # resumable, so a run finished in two passes would otherwise report only the
+    # second pass's spend and understate the cost of the result.
+    costed = [p.cost_usd for p in rows if p.cost_usd is not None]
     model = next((p.model for p in rows if p.model), "")
     return RunMetadata(
         task=task.name,
@@ -143,6 +152,7 @@ def run_task(
         kind=task.kind,
         labels=list(task.labels),
         provider=getattr(provider, "name", provider.__class__.__name__),
+        endpoint=_endpoint_of(provider),
         model=model,
         n_examples=len(rows),
         n_ok=n_ok,
@@ -150,9 +160,18 @@ def run_task(
         started_at=started,
         finished_at=finished,
         wall_seconds=finished - started,
-        total_cost_usd=counter["cost"] or None,
+        total_cost_usd=sum(costed) if costed else None,
         simulated=getattr(provider, "name", "") == "simulated",
     )
+
+
+def _endpoint_of(provider: Any) -> str:
+    """The URL a provider posts to, when it posts to one at all."""
+    base = getattr(provider, "base_url", "")
+    if not base:
+        return ""
+    path = getattr(provider, "_path", "")
+    return f"{base}/{path}" if path else base
 
 
 def _print_progress(done: int, total: int, failed: int, started: float, final: bool = False) -> None:
