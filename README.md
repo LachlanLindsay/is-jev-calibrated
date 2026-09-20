@@ -106,31 +106,62 @@ The audit is only as credible as the dataset behind it, so this repo ships
 converters rather than a favourite benchmark. Pick something public, say which
 split you used, and publish the task spec alongside the numbers.
 
-### 2. Confirm where the probabilities live
+### 2. Confirm the response shape
 
 ```bash
 export AI_GATEWAY_API_KEY=...
 python -m jevcal probe tasks/sentiment.json
 ```
 
-`probe` sends one request and prints the raw response plus every extraction path
-that works against it. **Do this before a long run.** The client reads the
-probability distribution from a native field on the body, from OpenAI-style
-`top_logprobs`, or from JSON in the message content, and tries them in that
-order; pin the right one with `--probability-source` rather than discovering
-10,000 requests later that it picked a path you didn't intend. If none of them
-match, the run fails loudly instead of inventing a confidence.
+`probe` sends one request and prints the payload, the raw response, the endpoint
+it went to, and which extraction paths work against it. **Do this before a long
+run**, so a mapping change shows up on request one rather than on request 10,000.
+
+Jev is an *evaluation* model, not a chat model: it does not generate text, and it
+is not reachable through OpenAI-compatible endpoints. The client posts a shared
+`state` plus a map of typed `questions`, and reads the distribution straight off
+the answer — `probabilities` for a Choice or Score, a single `probability` for a
+yes/no. If that field is missing the run fails loudly instead of inventing a
+confidence. [`docs/api-notes.md`](docs/api-notes.md) has the full shape of all
+three answer types, captured live.
+
+Two surfaces serve the same model, selected with `--surface`:
+
+| | `gateway` (default) | `typesafe` |
+| --- | --- | --- |
+| endpoint | `ai-gateway.vercel.sh/v1/evaluate` | `api.typesafe.ai/v1/systemone` |
+| availability | generally available | waitlisted, early-access agreement |
+
+Prefer the gateway: its terms are the ones that let you publish without checking
+an agreement first.
 
 One thing this client will never do is ask the model to *write* a confidence
 number into its output. A self-reported number in generated text is a different
 object from a calibrated distribution, and auditing it would answer a different
 question than the one on the label.
 
+#### What gets calibrated, and what doesn't
+
+Jev returns a `confidence` alongside the distribution, and TypeSafe's docs tell
+you to gate on it. It is **not** the probability of the chosen option — it is one
+minus the normalised entropy of the distribution, a measure of how *peaked* the
+answer is rather than how likely it is to be right. It has no reason to sit on
+the reliability diagonal even for a perfectly calibrated model.
+
+So the reliability diagram here plots `max(probabilities)`, which is the quantity
+that should equal the accuracy. Jev's own `confidence` is recorded next to it as
+`reported_confidence` so the two can be compared, and never plotted as if it were
+the same object.
+
 ### 3. Run the audit
 
 ```bash
-python -m jevcal audit tasks/sentiment.json --provider gateway --concurrency 16
+python -m jevcal audit tasks/sentiment.json --provider gateway --concurrency 8
 ```
+
+Leave concurrency at 8. TypeSafe's own cookbooks note the public endpoint
+rate-limits above roughly eight workers, and a run that trips the limit is slower
+than one that doesn't.
 
 Results stream to `runs/*.jsonl` one row at a time and a rerun skips what is
 already on disk, so a run interrupted at example 7,431 costs you nothing to
@@ -216,7 +247,7 @@ jevcal/
   types.py       Task / Example / Prediction, and the task-spec format
   datasets.py    CSV and JSONL converters, plus a synthetic task for demos
   providers/
-    gateway.py   Jev via the Vercel AI Gateway, and the probability extraction
+    gateway.py   Jev via the evaluation API, both surfaces, and the extraction
     simulated.py the offline miscalibration simulator
   runner.py      concurrent, resumable batch execution
   metrics.py     ECE, MCE, Brier + decomposition, NLL, AUROC, Wilson, bootstrap
@@ -225,6 +256,10 @@ jevcal/
   plots.py       the three charts, light and dark
   report.py      report.md and results.json
   cli.py         run / analyze / audit / probe / make-task
+docs/
+  api-notes.md   what the API actually returns, and what that costs the audit
+scripts/
+  build_clinc150.py  the dataset loader behind the committed task specs
 ```
 
 ## Licence
