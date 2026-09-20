@@ -64,8 +64,8 @@ gateway; see the terms note at the end of the writeup.
 [`HANDOVER.md`](HANDOVER.md) was the brief for the run. Its highest-risk
 assumption turned out to be wrong in a way worth reading:
 [`docs/api-notes.md`](docs/api-notes.md) is the verification trail, and
-[`results/confident-errors.md`](results/confident-errors.md) documents a
-correction we had to publish against ourselves.
+[`results/confident-errors.md`](results/confident-errors.md) examines what the
+model gets wrong when it claims certainty — and whether the dataset is to blame.
 
 ## What it measures
 

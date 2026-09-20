@@ -3,26 +3,32 @@
 *Reproduce with `python scripts/confident_errors.py`; machine-readable output in
 [`confident-errors.json`](confident-errors.json).*
 
-## A correction first
+Jev is wrong 219 times out of 13,977 while reporting a probability of exactly
+`1.000`. This is a look at what those errors are, and at whether the dataset or
+the model is responsible for them.
 
-An earlier version of this report claimed most of the audit's measured
-miscalibration was CLINC150 annotation noise — that the gold labels were
-contestable and in places "simply wrong", and that forgiving six intent pairs
-dropped ECE from 0.021 to 0.0066.
+## First: is the dataset at fault?
 
-**That was wrong.** It was produced by looking only at the utterances Jev got
-wrong, and never checking what CLINC150 labels with the *other* intent in each
-pair. Doing that check takes one query and overturns the conclusion: the dataset's
-taxonomy is coherent and deliberate, and on 372 of the 395 decisions in question
-the gold label is right and the model is wrong.
+The confident errors are not randomly spread. 74% of them fall on six pairs of
+near-synonymous classes, and read in isolation several look like the benchmark
+simply mislabelled a row:
 
-The strict numbers were correct all along: **accuracy 92.63%, ECE 0.0209, 219
-errors at a reported probability of exactly 1.000.**
+    "when was my last oil change"    labelled last_maintenance, model said oil_change_when
+    "set a reminder to call my mom"  labelled reminder_update,  model said reminder
 
-What follows is what those errors actually are, which turns out to be more
-interesting than either the original framing or the mistaken correction.
+That is a tempting conclusion, and it is wrong. It comes from looking only at the
+rows the model got wrong, which never shows you the rows that establish what each
+class is *for*. Sampling the other class in each pair settles it in one query —
+see [the table below](#the-distinctions-being-collapsed). The taxonomy is
+deliberate and consistent, and on **372 of the 395** decisions in question the
+dataset's label is right and the model's answer is wrong.
 
-## The confident errors are systematic
+Genuine annotation errors come to two class pairs and 23 decisions: 0.1% of the
+run, worth 0.0007 of ECE. So the headline numbers stand as measured —
+**accuracy 92.63%, ECE 0.0209, 219 errors at `1.000`** — and the interesting
+question is what the errors have in common.
+
+## The distinctions being collapsed
 
 Jev is wrong 219 times while reporting a probability of 1.000. Those errors are
 not spread evenly across 150 intents. **74% of them are one of four confusions**,
@@ -88,19 +94,17 @@ Forgiving both moves ECE from 0.0209 to 0.0202 and overconfidence from +2.08% to
 So annotation noise in CLINC150 is real but tiny — about 0.1% of the run, not the
 two-thirds claimed earlier.
 
-## The methodological lesson
+## A note on method
 
-The mistaken version of this report was not a computational error. Every number
-in it was correct. The error was in interpretation: I inspected the model's
-mistakes, found them concentrated on pairs that *looked* synonymous out of
-context, and concluded the benchmark was at fault — without ever sampling the
-other intent to see whether the distinction was real.
+The "the benchmark is wrong" reading of these errors is easy to reach and hard to
+shake, because every piece of evidence supporting it is real. The rows really do
+look mislabelled when you read them on their own.
 
-That is the same failure this repo exists to warn about, pointed at a dataset
-instead of a confidence number: a plausible story, assembled from evidence
-selected after the fact, and stated with more certainty than the checking
-justified. It also flattered the subject under test, which should have been the
-signal to check harder rather than publish.
+What makes it wrong is the sampling. Inspecting only a model's *errors* shows you
+pairs that look interchangeable and never shows you the rows that distinguish
+them. The conclusion is a plausible story, assembled from evidence selected after
+the fact, that happens to flatter the thing under test — which is reason to check
+harder, not to publish.
 
-Worth noting that the check which overturned it — *look at what the other label
-is used for* — costs one query and would have prevented the whole detour.
+The check that settles it costs one query: **look at what the other class is used
+for.** It is worth running before attributing any error to annotation noise.

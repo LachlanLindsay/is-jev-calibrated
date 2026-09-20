@@ -30,16 +30,20 @@ about 90% of the time — within roughly 2 percentage points on average.
 `1.000` on **62% of all decisions**. It's wrong 219 of those 13,977 times. Not a
 big error rate, but "certain" is a claim that shouldn't have counterexamples.
 
-**3. The biggest problem was mine, not the model's.** We handed it 150 class
-names with no explanation of what they meant. Writing one sentence of
-description for 16 of those 150 classes **cut the error rate on those rows by
-63%** and dropped miscalibration eightfold. If you use this API the way we
-originally did, you will get our bad numbers. Don't.
+**3. How you describe your classes is the biggest lever in the API.** Jev has no
+training step — it learns what your classes mean from the strings you send with
+each request. Give it bare names and it cannot tell `reminder` from
+`reminder_update`. Adding one sentence of description to 16 of the 150 classes
+**cut errors on those rows by 63%** and reduced miscalibration **eightfold**,
+changing nothing else. That is a larger effect than anything else measured here,
+and it costs a few tokens.
 
-**4. The yes/no version doesn't work.** Ask "is this request in scope?" as a
-boolean and confidence stops being informative at exactly the point you'd gate
-on it. **No threshold gives you a usable error budget.** Ask the *same question*
-as a multiple-choice with a "none of these" option and it works fine.
+**4. The same question asked as a yes/no stops working.** "Is this request in
+scope?" as a boolean produces confidence that flattens out precisely where you'd
+want to gate on it — **no threshold gives a usable error budget**, at any level
+from 1% to 10%. Asked instead as a multiple-choice with a "none of these"
+option, it works: 72.7% of out-of-scope queries caught at a 0.89% false-alarm
+rate. The primitive you pick changes the answer more than the model does.
 
 If you take one thing away: **write descriptions for your options, and prefer
 Choice-with-a-rejection-option over a boolean.**
@@ -234,11 +238,15 @@ seen. The 5% gate fit at 4.53% and held at **4.40%**. They transfer.
 
 ---
 
-## Experiment 1b — the thing we got wrong
+## Experiment 1b — how much do the option descriptions matter?
 
-**This is the most important section in the report.**
+**This is the largest effect in the report, and the one with the clearest action
+attached.**
 
-Look again at the request we were sending:
+Recall that `criteria` carries both a class name and a description, and that
+those strings are the *only* thing telling the model what each class means.
+Experiment 1 used CLINC150's raw class names, with the underscores removed as
+descriptions:
 
 ```json
 "criteria": {
@@ -247,15 +255,14 @@ Look again at the request we were sending:
 }
 ```
 
-The description is just the class name with the underscore removed. It says
-nothing about what separates the two. And CLINC150 draws a real distinction here:
-`reminder` means *read my reminders back to me*; `reminder_update` means *create
-a new one*.
+That is a realistic way to wire up a classifier — you already have the class
+names, so you use them. But it conveys nothing about what separates the two, and
+CLINC150 draws a real distinction here: `reminder` means *read my reminders back
+to me*, `reminder_update` means *create a new one*. TypeSafe's docs are explicit
+that this matters — *"write descriptions that separate the options from each
+other"* — so it is worth measuring what ignoring that costs.
 
-TypeSafe's own docs say it plainly: *"write descriptions that separate the
-options from each other."* We didn't.
-
-So we re-ran 2,400 rows with a single sentence of description on 16 of the 150
+So: 2,400 rows re-run with a single sentence of description on 16 of the 150
 classes. **Same model, same 150 options, same question, same rows.** Only the
 descriptions changed:
 
@@ -412,31 +419,40 @@ usually puts the true class at exactly 0.00), which is why we don't quote it.
 
 ---
 
-## What we got wrong while doing this
+## Is the benchmark itself at fault?
 
-Included because it's instructive, and because the same trap applies to anyone
-reading a benchmark.
+A fair challenge to any result like this: maybe the model is right and the
+dataset's labels are wrong. It is worth taking seriously, because the confident
+errors are *not* randomly spread — 74% of them fall on six pairs of
+near-synonymous classes, which looks exactly like annotation noise.
 
-**We shipped a client that could never have worked.** The original code posted
-OpenAI-style chat completions. Jev is an *evaluation* model — it doesn't generate
-text and isn't served over OpenAI-compatible endpoints at all. Checking the
-model card (`"max_tokens": 0`) and the vendor docs took fifteen minutes and would
-have saved a rewrite.
+It isn't. Checking what CLINC150 labels with the **other** class in each pair
+settles it in one query:
 
-**We published a wrong correction.** Seeing the confident errors cluster on
-near-synonymous class pairs, we concluded the *dataset* was mislabelled and
-claimed two-thirds of the miscalibration was annotation noise. That was wrong. We
-had only looked at the rows the model got wrong, never at what CLINC150 labels
-with the *other* class in each pair. One query settles it — `oil_change_when` is
-used exclusively for *future* oil changes, `last_maintenance` for past ones. The
-taxonomy is deliberate; the model was wrong; we retracted it.
+| class | what the dataset uses it for |
+| --- | --- |
+| `reminder` | *"what reminders did i have"* — reading the list |
+| `reminder_update` | *"remind me to call bob"* — creating an entry |
+| `oil_change_when` | *"when will i need my next oil change"* — future |
+| `last_maintenance` | *"when did i last change my oil"* — past |
 
-The pattern is worth naming: **a plausible story, assembled from evidence
-selected after the fact, that happened to flatter the thing being tested.** That
-should trigger more scepticism, not less. It's the same failure mode this whole
-repo exists to warn about, just pointed at a dataset instead of a probability.
+The taxonomy is deliberate and consistent. On **372 of the 395** decisions in
+question the dataset's label is right and the model's answer is wrong. Genuine
+annotation errors amount to two class pairs and 23 decisions — about 0.1% of the
+run, worth 0.0007 of ECE. Nothing.
 
-The full retraction is in [`confident-errors.md`](confident-errors.md).
+That result is also a warning about the method. Inspecting only the rows a model
+got *wrong* makes near-synonymous classes look interchangeable, because you never
+see the rows that establish the distinction. **A plausible story, assembled from
+evidence selected after the fact, that happens to flatter the thing being
+tested** — that pattern should prompt more checking, not less. It is the same
+failure mode this repo exists to warn about, pointed at a dataset instead of a
+probability.
+
+The same caution applies to Experiment 1b above, which is why its result is
+given as an upper bound rather than a headline.
+
+Full working in [`confident-errors.md`](confident-errors.md).
 
 ---
 
