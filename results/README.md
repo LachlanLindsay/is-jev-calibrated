@@ -12,6 +12,7 @@ directory holds the artifacts behind it:
 | [`clinc150-gate-rich/`](clinc150-gate-rich/) | E3b, the same gate with the scope enumerated |
 | [`clinc150-described-full/`](clinc150-described-full/) | E1c, all 150 classes described by the error-blind rule |
 | [`confident-errors.md`](confident-errors.md) | what the model gets wrong while claiming certainty, and whether the dataset is to blame |
+| [`label-errata.md`](label-errata.md) | the 12 CLINC150 rows whose gold label fails against the dataset's own usage, with evidence ([jsonl](label-errata.jsonl)) |
 | [`confident-errors.json`](confident-errors.json) | the same, machine-readable |
 | [`rejector-comparison.json`](rejector-comparison.json) | out-of-scope detectors head-to-head on identical rows |
 | [`description-effect.json`](description-effect.json) | bare names vs described classes, targeted and clean |

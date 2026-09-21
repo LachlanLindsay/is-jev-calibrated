@@ -149,3 +149,10 @@ model's fault (372 of 395 gold labels correct); E1c's check out mostly as the
 dataset's. The difference is not the method but the model's remaining error
 mass — specification fixed the systematic failures, and what is left is the
 noise floor.
+
+The rows this document convicts — the five clear errors above and the
+documented `ingredients_list`/`recipe` and `pto_used`/`pto_balance` cases —
+are published with their evidence as [`label-errata.md`](label-errata.md), and
+[`../docs/upstream-issue.md`](../docs/upstream-issue.md) is the text for
+reporting them to the dataset's repository.
+
